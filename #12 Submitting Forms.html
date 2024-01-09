@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submitting Forms lesson #12</title>
+  </head>
+  <body>
+    <p>
+      An HTML form is a convenient way to send data to a database hosted in a
+      server. In this lesson, you'll learn to submit form data.
+    </p>
+<p>
+   <li>QUIZ: What will the browser display?</li> 
+<form>
+  <label for="t1">Email</label>
+  <input type="text" id="t1">
+  <label for="t2">Country</label>
+  <input type="text" id="t2">
+</form>
+
+-A table
+-A form with two input fields (ANSWER)..............
+
+<li>A submit button is used to send the data in a form. The submit type of input adds a button to the form.</li>
+<form>
+    <label for="em">email:</label>
+    <input type="text" id="em"><br>
+    <input type="submit">
+</form>
+
+<li>You can use the submit input to send the data in the form to a database hosted in a server.</li>
+
+    Do you remember what a server is?    
+    -A computer that is always connected to the Internet and listening for requests of information (Correct ANSWER)
+    -The device that is being used to access the Web
+
+<li>The name attribute is used to reference the data after submitting the form.</li> 
+<form>
+<input type="text" name="email">
+<input type="text" name= "city">
+<input type="submit">
+</form>
+
+<li>Only form elements with a name attribute will have their values passed to the database when submitting a form.</li>
+    <form>
+      <input type="text" name="email"> 
+      <input type="text" name="city">
+      <input type="submit">
+    </form>
+
+<li>The form below will not send data to the database when submitted. Why?</li>
+
+    <form>
+      <input type="text"> 
+      <input type="text">
+      <input type="submit">
+    </form>
+   Choices:
+    -submit button is missing
+    -input fields don't have names [-Answer]
+
+<li> The name attribute is used to put the input from the user in the correct field (column) in the database.</li> 
+        Name attributes need to be added to…
+    - labels
+    - input fields [-Answer]
+<li>Remember labels and input fields need to be correctly paired.</li>
+    <form>
+    <label for="t1">Email</label>
+    <input type="text" id="t1" name="email">
+    <label for="t2">Country</label>
+    <input type="text" id="t2"name="country">
+    <input type="submit">
+    </form>
+
+<li>How will the email field be referenced in the database?</li>
+
+    <form>
+      <label for="t1">Email</label>
+      <input type="text" id="t1" name="em">
+      <label for="t2">Country</label>
+      <input type="text" id="t2" name="co">
+    </form>
+Answers:
+co
+em [-ANSWER]
+Email
+
+<li>The value attribute defines the value that is submitted when the input is selected.</li>
+See below:
+
+    <form>
+      <input type="radio" id="r1" name="pay" value="cash">
+      <label for="r1">Cash</label>
+      <input type="radio" id="r2" name="pay" value="card">
+      <label for="r2">Card</label>
+    </form>
+
+<li>Names and values are needed to correctly store information in the database. The HTML code needs to include where and what to put in the database.</li>
+choices:
+    - where to put the information: name=""
+    - what information:value=""
+    
+<li>QUIZ: What will this form send to the database when the second radio button is selected?</li>
+
+    <form>
+      <input type="radio" id="r1" name="pay" value="cash">
+      <label for="r1">Cash</label>
+      <input type="radio" id="r2" name="pay" value="card">
+      <label for="r2">Card</label>
+      <input type="submit">
+    </form>
+Answer: Card
+
+<li>Where will the users' choice of payment method be stored in the database?</li>
+
+    <form>
+      <input type="radio" id="r1" name="pay" value="cash">
+      <label for="r1">Cash</label>
+      <input type="radio" id="r2" name="pay" value="card">
+      <label for="r2">Card</label>
+      <input type= "submit">
+    </form>
+    HTML
+   - field (column) named "cash"
+    - field (column) named "radio"
+   - field (column) named "pay"...[ANSWER]
+
+<li>For the case of text inputs, you can use the value attribute to define a default value that will be submitted unless a different value is provided by the user.</li>
+See example below:
+    <form>
+      <label for="t1">Email:</label>
+      <input type="text" id="t1" name="email" value="example@domain.com"> 
+    </form>
+
+<li> The value in the text input above will be sent to the database…</li>
+    
+    <form>
+    <label for="t1">Email:</label>
+    <input type="text" id="t1" name="email" value="example@domain.com"> 
+  </form>
+  CHOICES 
+  - Only when the user doesn't provide a different value.[ANSWER]
+  - Always.
+<li>Complete the code for the form....</li>
+<form>
+    <label for="t1">Email</label>
+    <input type="text" id="t1" name="em">
+    <label for ="t2">Country</label>
+    <input type="text" id="t2" name="co">
+    <input type="submit">
+  </form>
+  
+<li>Lesson Takeaways</li>
+    Great job! You learned that:
+    ⭐ The submit type of input allows the user to send form data
+    
+    ⭐ The name attribute is used to tell the database where to store the data
+    
+    ⭐ The value attribute is used to tell the database what to store
+    
+<li>In the next lesson, you'll learn to add drop-down menus to your page.</li>
+<li>...The End...</li>
+
+</p>
+
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms lesson #11</title>
+  </head>
+  <body>
+    <p>You can interact with the visitors of your website and collect information
+    from them using forms. You can use forms to let your visitors: 
+    - get in contact with you 
+    - send orders, requests and other information 
+    - create an account or register 
+    - and much more 
+    What will you use forms for? Click on “Comments” below to share your ideas with other learners.
+
+    Forms are made of input elements like text fields, checkboxes, and submit buttons. These input elements are nested inside the <form> container tag.
+
+        <form>
+        <!--input elements go here-->
+        </form>
+    </p>
+
+    <p>
+        The most common form element is <input>. There are many forms of <input> element, depending on the type attribute.
+        Run the code to see how different input elements look
+CODE PLAYGROUND:
+<form>
+ <input type="text">
+ <input type="radio">
+ <input type="checkbox">
+</form>
+    </p>
+
+    <p>
+Form elements will be displayed in the same line unless we use the <br> (line break) tag.
+
+CODE PLAYGROUND: HTML
+<form>
+  <input type="text"><br>
+  <input type="radio"><br>
+  <input type="checkbox"><br>
+</form>
+    </p>
+    <li>Labels can be added for the different input elements with the <label> tag.</li>
+        <form>
+        <label>email:</label> 
+        <input type="text">
+        </form>
+        
+    <li>Run the code to see what the web browser will display</li>
+
+        CODE PLAYGROUND: HTML
+        <form>
+         <label>Enter text</label>
+         <input type="text">
+         <label>Select the radio button</label>
+         <input type="radio">
+         <label>Check the box</label>
+         <input type="checkbox">
+        </form>
+    
+    <li>It's considered a very good practice to connect the label to the input elements with the use of for and id attributes.</li>
+See example below:
+        <p>Notification preferences:</p>
+        <form>
+          <input type="checkbox" id="box1"> 
+          <label for="box1">Email</label>
+          <input type="checkbox" id="box2"> 
+          <label for="box2">Push</label>
+        </form>
+    <li>The id attribute is used to identify a unique input element. The for attribute in a label targets (and matches!) an input's id. </li>
+        Choose the correct value for the for attribute to connect to this input:
+        
+        <input type="radio" id="r1">
+        Answer: <label for="r1">Text</label>
+
+    <li>To connect labels and inputs, their id and for attribute values must match up exactly.
+        Which attribute is used with which element?</li>
+        
+        <label>: for
+        <input>: id
+        
+    <li>Connecting labels and inputs increases the hit area. Run the code and try hitting the words of the labels to see what we mean.</li>
+        CODE PLAYGROUND: HTML
+
+        <p>Choose your interests:</p>
+        <form>
+          <input type="checkbox" id="c1">
+          <label for="c1">Art</label>
+          <input type="checkbox" id="c2">
+          <label for="c2">Sports</label>
+          <input type="checkbox" id="c3">
+          <label for="c3">Tech</label>
+        </form>
+
+    <li>NB: The correct use of labels will also help screen-reader users.</li>
+
+    <li>QUIZ: True or False? 
+        - Correctly connecting labels and form fields will increase hit area and improve accessibility.</li>
+    Answer: True
+
+    <li>The id attribute is used to identify unique elements in an HTML document.</li>
+<li>QUIZ: True or False? You can give multiple elements the same id in one HTML document.</li>
+Answer: FALSE
+
+    <li>There's something wrong with this code. Can you identify it?</li>
+
+        <form>
+          <input type="checkbox">
+          <label for="c1">Low</label>
+          <input type="checkbox">
+          <label for="c2">High</label>
+         </form>
+       ANSWER:- missing id attributes
+
+    <li>QUIZ: When labels and form fields are correctly connected…</li>
+ANSWER:=Hitting the label selects the form field.
+
+    <li>QUIZ: Select the only incorrect statement about the id attribute</li>
+
+    <ol>
+        <li>You cannot have more than one element with the same id in an HTML document.</li>
+        <li>It's used to give a unique id to an HTML element.</li>
+        <li>ANSWER: You can use the same id multiple times in an HTML document.</li>
+    </ol>
+
+    <li>Lesson Takeaways</li>
+        <li>Great job! You learned that:</li>
+        
+        ⭐ You can add forms to your web pages with the <form> container tag
+        
+        ⭐ Forms are made of <input> elements
+        
+        ⭐ You can label the different inputs in a form with the <label> container tag
+        
+            <li> In the next lesson, you'll take your web form skills to the next level.</li>
+    
+  </body>
+</html>
