@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-Down Menus #13</title>
+</head>
+<body>
+    <p>
+    <img src="images/dropdown-menus.webp"> <br>
+    Drop-down menus make your forms more efficient, accessible, and organized.<br>
+In this lesson, you'll learn to add drop-down lists to your page.<br>
+   </p>
+
+<p>
+    <ul>
+        <li>You can use the &lt;select&gt; container tag to create a drop-down list.</li>
+            <select>
+            <!--options-->
+            </select>
+
+        <li>The &lt;option&gt; container tag is used inside a &lt;select&gt; tag to add choices for the user. See below:</li>
+
+            <select>
+            <option>Opt A</option>
+            <option>Opt B</option>
+            <option>Opt C</option>
+            </select>
+
+        <li>You can use the &lt;select&gt; element as part of a form to collect user input.</li>
+
+        <form>
+            <select>
+            <option>Opt 1</option>
+            <option>Opt 2</option>
+            </select>
+        </form>
+        
+        <li>Submitting a form sends information to a database. The name attribute is needed to submit the form data.</li>
+            <form>
+            <select name="color">
+            <option>Red</option>
+            <option>Blue</option>
+            </select>
+            </form>
+
+        <li>The name attribute is used to tell the database…</li>
+           - the value to be stored<br>
+            - where to store the data -[ANSWER]<br>
+
+        <li>Data will be sent when the form is submitted. You can control the data each option sends with the value attribute.</li>
+CODE:<br>
+<select id="dropdown">
+ <option value="r">Red</option>
+ <option value="g">Green</option>
+ <option value="b">Blue</option>
+</select>
+
+        <li>QUIZ: What will this form send to the database when the second option is selected?</li>
+            
+            <form>
+             <select name="pet">
+              <option value="cat">Opt 1</option>
+              <option value="dog">Opt 2</option>
+             </select>
+            </form>
+            <br>Choices:<br>
+            - Opt 2<br>
+            - cat<br>
+            - dog [ANSWER]<br>
+
+        <li>The selected attribute creates a drop-down menu with a pre-selected option. The pre-selected option will be displayed first.</li>
+            <select name="color">
+             <option value="r"> Red</option>
+             <option value="g"> Green</option>
+             <option value="b" selected> Blue</option>
+            </select>
+
+            <br> QUIZ: Which of the options has been pre-selected?
+            -Red
+            -Blue [ANSWER]
+
+        <li>You can add labels to drop-down menus.</li>
+            <form>
+            <label>Vehicle type:</label> 
+            <select name="vehicle">
+            <option value="car">Car</option>
+            <option value="bus">Bus</option>
+            </select>
+            </form>
+
+        <li>Labels and drop-down menus are connected with for and id attributes, just like any other form element.</li>
+            CODE:<br>
+            <form>
+             <label for="s1">Vehicle type:</label>
+              <select name="vehicle" id="s1">
+               <option value="car">Car</option>
+               <option value="bus">Bus</option>
+               <option value="bus">Van</option>
+               <option value="bus">Matatu</option>
+               <option value="bus">Bike</option>
+              </select>
+            </form>
+
+        <li>Correctly connecting labels and form fields will increase hit area and improve accessibility.</li>
+    </li>Which attribute is used with which element?</li>
+            <label>: for attribute 
+            <select>: id attribute
+            
+        <li>When labels and form fields are correctly connected…</li>
+            -Label and form fields are displayed on the same line.<br>
+            -Label and form fields are displayed in the same color.<br>
+            -Hitting the label selects the form field.-[ANSWER]<br>
+
+        <li>Select the only incorrect statement about the id attribute.</li>
+- You cannot have more than one element with the same id in an HTML document.<br>
+- You can use the same id multiple times in an HTML document.[ANSWER]<br>
+- It's used to give a unique id to an HTML element?.<br>
+
+        <li>Complete the code.</li>
+            <form>
+            <label for="s1">Vehicle type:</label>
+            <select name="vehicle" id= "S1">
+            <option>Car</option>
+            <option>Bus</option>
+            </select>
+            </form>
+
+        <li>Complete the code.</li>
+            <form>
+            <label for="d1">Currency:</label>
+            <select name="currency" id="d1">
+            <option>Euro</option>
+            <option>US Dollar</option>
+            </select>
+            </form>
+
+        <li>The &lt;select&gt; element can be used in forms in combination with input elements.</li>
+            Match the tag with the input element<br>
+            
+            <input type="text">:text box
+            <input type="checkbox">:check box
+            <input type="radio">:radio button
+            <input type="submit">:submit button
+            
+        <li>There are many other types of input elements that you can use in your forms.</li>
+            <li>Run the code to explore some more.</li>
+            CODE PLAYGROUND: HTML<br>
+            Email:<input type="email"><br>
+            Password:<input type="password"><br>
+            Telephone:<input type="tel"><br>
+
+        <li>Lesson Takeaways</li>
+            <p>Good Job! You learned that:</p>
+           
+            ⭐ the <select> tag is used to create a drop-down menu
+            
+            ⭐ the <option> tag is used to give choices to the user
+            
+            ⭐ you can use drop-down menus in forms, in combination with other input elements
+            
+            <li>In the next lesson, you'll learn to add videos to your web pages.</li>
+        
+        <li></li>
+        <li></li>
+    </ul>
+</p>
+
+
+</body>
+</html>
