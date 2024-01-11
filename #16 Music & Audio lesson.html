@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music & Audio lesson #16</title>
+</head>
+<body>
+    <p>
+        <ul>
+            <li>Sound is another way to engage your visitors, pass on information, or evoke emotions.</li>
+                In this lesson, we'll learn to add audio to your sites.
+
+            <li>You can embed audio files into web pages with the &lt;audio&gt; container tag.</li>
+                <audio>
+                    <!--audio file-->
+                </audio>
+
+            <li>Just like video, the &lt;source&gt; tag is used to add source options for audio. see below:</li>
+                <audio>
+                <source src="audiofile.mp3"
+                type="audio/mpeg">
+                <source src="audiofile.ogg"
+                type="audio/ogg">
+                </audio>
+
+            <li>The &lt;source&gt; tag is…</li>
+                -a closing tag
+                -a container tag
+                -an empty tag -[ANSWER]
+
+            <li>Just like video, the src attribute adds the audio file URL. The type attribute adds the format.
+                <audio>
+                <source src="file.mp3" type="audio/mpeg">
+                <source src="file.ogg" type="audio/ogg">
+                </audio>
+
+            <li>Just like video, you can add audio files in different formats. Common audio formats are: MP3, OGG and WAV.</li>
+                <audio>
+                <source src="file.mp3" type="audio/mpeg">
+                <source src="file.ogg" type="audio/ogg">
+                Audio not supported
+                </audio>
+                
+            <li>What is the correct way to give audio source options?</li>
+                - Nesting all <source> options inside <audio> -[ANSWER]
+                - Adding <audio> tags for each source option
+
+            <li>QUIZ: What will the browser display if the 2 audio files are not supported?</li>
+
+                <audio>
+                 <source src="audiofile.mp3" type="audio/mpeg">
+                 <source src="audiofile.ogg" type="audio/ogg">
+                 Audio not supported
+                </audio>
+            Choices:
+                -A YouTube video
+                -Audio not supported -[Answer]
+                -404 code error
+
+            <li>QUIZ: What will the browser display if at least one of the audio files is supported?</li>
+                
+                <audio controls>
+                 <source src="audiofile.mp3" type="audio/mpeg">
+                 <source src="audiofile.ogg" type="audio/ogg">
+                 Audio not supported
+                </audio>
+            Choices:
+                - The audio element without any controls.
+                - The audio element with play/pause and volume controls. -[ANSWER]
+                - The video file with controls.
+
+            <li>Attributes usually come in the name="value" format. Why is the controls attribute an exception?</li>
+                - Attributes can't be applied to multimedia elements.
+                - It has a default value if no other is specified.
+
+            <li> Attributes usually come in the name="value" format. Why is the controls attribute an exception?</li>
+                -Attributes can't be applied to multimedia elements.
+                -It has a default value if no other is specified. -[ANSWER]
+
+            <li>What will the browser display if the 2 audio files are supported?</li>
+                <audio>
+                 <source src="audiofile.mp3"
+                    type="audio/mpeg">
+                 <source src="audiofile.ogg"
+                    type="audio/ogg">
+                 Audio not supported
+                </audio>
+            Choices:
+                -The audio element in ogg format.
+                -Audio not supported.
+                -The audio element in mp3 format.
+
+            <li>You can use autoplay, muted and loop attributes to control the behavior of the multimedia element. Just like controls, these attributes have their default values omitted.</li>
+                Match the media attribute to its description
+            Choices:
+                - No sound: muted
+                - Starts playing automatically: autoplay
+                - Plays on repeat: loop
+                - Shows media controls: controls
+                <br> 
+                See examples below:
+                <li>What will happen as soon as the page is loaded by the browser?</li>
+                <audio autoplay>
+                <source src="file.mp3" type="audio/mpeg">
+                <source src="file.ogg" type="audio/ogg">
+                Audio not supported
+                </audio>
+            Choices:
+                -The audio will be muted.
+                -The audio will start playing. -[ANSWER]
+                -The audio will be paused.                      
+              
+            <li>How will this video behave in the browser?</li>
+                <video autoplay muted>
+                  <source src="videofile.mp4" type="video/mp4">
+                  <source src="videofile.ogg" type="video/ogg">
+                </video>
+            Choices:
+                -The audio will play without video.
+                -The play and volume controls will be displayed.
+                -The video will start playing automatically without sound.-[ANSWER]
+
+            <li>How will this multimedia element behave in the browser?</li>
+                <audio loop>
+                  <source src="audiofile.mp3" type="audio/mpeg">
+                  <source src="audiofile.ogg" type="audio/ogg">
+                </audio>
+            Choices:
+                -The video will start again every time it finishes.
+                -The audio will start playing automatically.
+                -The audio will start again every time it finishes.-[ANSWER]
+
+            <li>The autoplay, muted and loop attributes can be used with…</li>
+            Choices:    
+                -video elements only.
+                -audio elements only.
+                -both video and audio elements.-[ANSWER]
+
+            <li>What's wrong with this code?</li>
+                <audio controls>
+                 <source src="music.ogg" type="audio/ogg">
+                 <source src="music.mp3" type="audio/mp3">
+                 Audio format not supported
+                </audio>
+            Choices:
+                -OGG is not a valid audio format.
+                -The type attribute is missing for the MP3 source.-[ANSWER]
+                -There is text in the code that should be surrounded by tags.
+
+            <li>Lesson Takeaways.</li>
+                Great job! You learned that:<br>
+                ⭐ The <audio> tag embeds sound into a web page.<br>
+                ⭐ The autoplay, muted and loop attributes control how the multimedia behaves.<br>
+                In the next lesson you'll learn page layout to improve your web designs.
+
+            <li></li>
+            
+        </ul>
+    </p>
+</body>
+</html>
