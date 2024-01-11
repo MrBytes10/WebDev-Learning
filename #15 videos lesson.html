@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos Lesson #15</title>
+</head>
+<body>
+<p>
+Videos can captivate and inform.
+In this lesson, you'll learn to add videos to spice up your pages.
+</p>
+<p>
+    <ul>
+        <li>You can use the &lt;video&gt; container tag to embed video files into a web page.</li>
+            <video>
+            <!--video file-->
+            </video>
+
+        <li>Just like images, videos are embedded (or linked) into a web page.</li>
+             QUIZ: What does that mean?
+            - The video needs to be stored on the viewer's device
+            - The source (or location) URL of the video needs to be provided. [ANSWER]
+
+        <li>You can add video files in different formats. Common video formats are: MP4, OGG and WebM.</li>
+            <video>
+            <source src="file.mp4" type="video/mp4">
+            </video>
+            
+        <li>The &lt;source&gt; empty tag provides the location and format of the video file.</li>
+            <video>
+            <source src="file.mp4" type="video/mp4">
+            </video>
+
+        <li>The src attribute specifies the URL of the video file.
+            <video>
+            <source src="file.mp4" type="video/mp4">
+            </video>
+
+        <li>The type attribute specifies the format of the video file.</li>
+            <video>
+            <source src="file.mp4" type="video/mp4">
+            </video>
+
+        <li>QUIZ:Select the correct format for the video.</li>
+            <video>
+            <source src="file.mp4" type="video/mp4">
+            </video>
+            
+        <li>Different media formats are needed for compatibility with different browsers and devices. The source tag [&lt;source&gt;] allows you to add multiple files.</li>
+            <video>
+            <source src="file.mp4" type="video/mp4">
+            <source src="file.webm" type="video/webm">
+            <source src="file.ogg" type="video/ogg">
+            </video>
+
+        <li>When different &lt;source&gt; options are included, the browser will choose the first one it supports.</li>
+             QUIZ: Which source will the browser choose if all the options are supported?
+            <video>
+             <source src="videofile.mp4" type="video/mp4">
+             <source src="videofile.webm" type="video/webm">
+            </video>
+Answer: mp4, since it's the first source,and is supported by the browser.
+
+        <li>You can add text between the &lt;video&gt; tags. The text will only be displayed in browsers that don't support the video element.</li>
+            What will the browser display if the 2 source options are not supported?
+             <video>
+             <source src="videofile.mp4" type="video/mp4">
+             <source src="videofile.webm" type="video/webm">
+             Video not supported
+            </video>
+      
+            Not found
+            WebM
+            404 error code
+            Video not supported -[ANSWER]............
+
+        <li>Complete the code.</li>
+            <video>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg"> 
+            <br>Video not supported
+            </video>
+
+        <li>You can display play/pause, volume and other video controls with the controls attribute.</li>
+            <video controls>
+            <source src="file.mp4" type="video/mp4">
+            <br>Video not supported
+            </video>
+            <br>........Note:Video controls are optional.....
+
+        <li>Add the controls attribute if you want to show default video controls like play, pause, etc.</li> 
+            Run the code to see the video with controls embedded in the page:<br>
+            CODE:<br>
+            <video controls>
+             <source src="URL" type="video/mp4">
+             <source src="URL" type="video/ogg">
+             <br>Video not supported.
+            </video>
+
+        <li>Lesson Takeaways.</li>
+            Amazing! You learned that:<br>
+                         
+            ⭐ The <video> tag embeds video in web pages.<br>
+            
+            ⭐ The <source> tag lets you add multiple media files.<br>
+            
+            ⭐ The controls attribute adds default video controls.<br>
+            
+            
+        <li>In the next lesson, you'll learn to embed audio into your pages.</li>
+
+    </ul>
+</p>
+</body>
+</html>
