@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables lesson #22</title>
+</head>
+<body>
+    <ul>
+        <li>Tables help you display data in a way that's easy to scan, compare, and analyze.
+            In this lesson, you'll learn to add tables to your web page.</li>
+
+        <li>You can add a table to your web page with the <table> container tag</li>
+            <table>
+                <!--rows and columns-->
+            </table>
+
+        <li>A table of data is made of..</li>
+            -rows and columns
+            -wood and nails
+
+        <li>You can add rows to a table with the <tr> (table row) container tag. </li>
+            Rows are nested inside the <table> tag.
+            <table>
+                <tr>
+                <!--row data-->
+                </tr>
+            </table>
+            
+        <li>You can add cells with the <td> (table data) container tag. They are nested inside rows.</li>
+            see CODE below:
+            <table>
+            <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            </tr>
+            </table>
+
+        <li>Run the code to display the table..</li>
+            CODE: HTML<br>
+            <table>
+              <tr> 
+                <td>C1</td>
+                <td>C2</td>
+              </tr>
+              <tr> 
+                <td>C3</td>
+                <td>C4</td>
+              </tr>
+            </table>
+
+        <li>Borders can be added to tables, rows and cells with the style attribute.</li>
+            Run the code to display the table.<br>
+            CODE:<br>
+            <table style="border:solid">
+              <tr> 
+                <td style="border:solid">C1</td>
+                <td style="border:solid">C2</td>
+              </tr>
+              <tr> 
+                <td style="border:solid">C3</td>
+                <td style="border:solid">C4</td>
+              </tr>
+            </table>
+
+        <li>What will the code display?</li>
+            <table>
+              <tr> 
+                <td>A</td>
+                <td>B</td>
+              </tr>
+              <tr> 
+                <td>C</td>
+                <td>D</td>
+              </tr>
+            </table>
+        CHOICES:
+            -A table with 4 rows and 1 column.
+            -A table with 2 rows and 2 columns.-[CHOICES]
+            -A table with 1 row and 4 columns.
+
+        <li>How many rows and columns does this table have?..</li>
+            <table>
+              <tr> 
+                <td>A</td><td>B</td><td>C</td>
+              </tr>
+              <tr> 
+                <td>D</td><td>E</td><td>F</td>
+              </tr>
+            </table>
+        ANSWERS:
+            Rows:2
+            Columns:3
+            
+        <li>The <td> elements within the same row are displayed on the same line, one after the other.</li>
+        Code:
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        QUIZ: The <td> elements are:
+            -hybrid elements.
+            -block-level elements.
+            -inline Elements.
+
+        <li>Remember that white space and line breaks in HTML are ignored by the browser. How many rows and columns does this table have?</li>
+            <table>
+              <tr>
+                <td>A</td><td>B</td>
+              </tr>
+              <tr>
+                <td>C</td><td>D</td>
+              </tr>
+              <tr> 
+                <td>E</td><td>F</td>
+              </tr> 
+            </table>
+        CHOICES:
+            Rows: 
+            3
+            Columns: 
+            2
+            
+        <li>Tables usually include headers. A header is a special row at the top of the table used to label each column.</li>
+            You can create header cells with <th> tag...<br>
+            <table>
+            <tr>
+            <th>Name</th> <th>Age</th>
+            </tr>
+            <tr>
+            <td>Amy</td><td>38</td>
+            </tr>
+            </table>
+
+        <li>Run the code to display the table with the header.</li>
+            CODE:<br>
+            <table>
+              <tr>
+                <th>Name</th><th>Age</th>
+              </tr>
+              <tr>
+                <td>Amy</td><td>38</td>
+              </tr>
+              <tr>
+                <td>Alex</td><td>29</td>
+              </tr>
+            </table>
+            <br>
+        NOTE:-You can include several headers in HTML tables.<br>
+
+        <li>Both <td> and <th> tags are used to add cells to a table. What's the difference?</li>
+            -table header cell:<th></th>
+            -table data cell:<td></td>
+            
+        <li><tr> elements are nested inside...</li>
+            <img>
+            <td>
+            <table>..ANSWER....
+            <th>
+
+        <li>The <td> elements are nested inside...</li>
+            <th>
+            <button>
+            <tr>[ANSWER]
+
+        <li>QUIZ: The <th> elements are nested inside...</li>
+            <p>
+            <tr>[ANSWER]
+            <td>
+
+        <li>You can make cells that take up multiple rows and/or columns, using the attributes colspan and rowspan. 
+            This is called merging cells.
+            colspan is for the number of columns a cell should span.</li>
+        CODE:
+            <table>
+              <tr>
+                <th>Month</th>
+                <th>Budget($)</th>
+              </tr>
+              <tr>
+                <td>January</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>February</td>
+                <td>400</td>
+              </tr>
+              <tr>
+                <td colspan="2">Sum: 900</td>
+              </tr>
+            </table>
+            <br>
+            Try to run the code above......
+
+
+        <li>The rowspan attribute specifies the number of rows a cell should span. You can use rowspan to merge cells vertically.</li>
+            CODE:
+            <table>
+              <tr>
+                <th>Month</th>
+                <th>Budget($)</th>
+                <th>Savings($)</th>
+              </tr>
+              <tr>
+                <td>January</td>
+                <td>500</td>
+                <td rowspan="2">150</td>
+              </tr>
+              <tr>
+                <td>February</td>
+                <td>400</td>
+              </tr>
+            </table>
+            <br>
+            ...........Try to run the code above........
+
+        <li>Complete this code for a table with 2 columns, 2 rows of data and a header row.
+
+        <table>
+            <tr>                
+            <th>H1</th> <th>H2</th>
+            </tr>
+              <tr>
+                <td>A</td> <td>B</td>
+              </tr>              
+            <tr>
+                <td>C</td><td>D</td>
+            </tr>
+        </table>
+
+        <li>Lesson Takeaways.</li>
+            Congrats! You learned that:
+            ⭐ You can add tables to web pages with the <table> container tag
+            ⭐ The <tr> container tag is used to add rows
+            ⭐ The <td> container tag is used to add data
+            ⭐ The <th> container tag is used to add headers
+        <li>In the next lesson, you'll start learning about JavaScript to make your web pages interactive.</li>
+
+        <li></li>
+    </ul>
+</body>
+</html>
