@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors#27</title>
+</head>
+
+<body>
+
+    <li>QUIZ:</li>
+    CSS uses ________ to target elements.
+
+    links
+    selectors===
+    properties
+    values
+
+    <li>Rules & Selectors...</li>
+    The style rules are defined in a CSS file using selectors.
+    Let's look at an example:
+    p {
+    color: red;
+    }
+    --The selector p targets all the paragraph elements of our HTML.
+
+    <li>Which is the selector in the rule ?</li>
+    div { color:blue; }
+    CHOICES:
+    CSS
+    div===
+    color
+    blue
+
+    <li>The declarations for each selector are then put inside curly braces { }:</li>
+    CODE PLAYGROUND: CSS
+    p {
+    color: red;
+    }
+    Click to run
+    Now, all the paragraphs of our HTML page will have a red color.
+
+    <li>Fill in the required characters to create a valid CSS rule.,,</li>
+    li
+    {
+    color: red;
+    }
+
+    <li>A rule can have multiple styles, for example:...</li>
+    CODE PLAYGROUND: CSS
+    p {
+    color: red;
+    font-size: 42px;
+    }
+    Click to run
+    Task: Open the code and modify the style to make all paragraphs green.
+
+    <li>Each style declaration in a rule ends with a:</li>
+    CHOICES:
+    curly bracket
+    dot
+    semicolon===
+    colon
+
+    <li>Targetting Multiple Selectors</li>
+    -We can target multiple selectors at once, by separating the selectors with a comma.
+    -For example, let's make all h1 headings and paragraphs red:
+    CODE PLAYGROUND: CSS
+    h1, p {
+    color: red;
+    }
+    Click to run
+    Task: Add another paragraph to the HTML code and see the CSS style in action.
+
+    <li>Fill in the blanks to target all div and main elements.</li>
+    div,main {
+    background-color: gray;
+    }
+
+    <li>Practice</li>
+    Let's summarize what we have learned:
+    - Target elements using CSS selectors with the element name.
+    - You can target multiple elements by separating them with a comma.
+    Practice with the Code Repo project below:
+
+    <li>Resume Building Practice</li>
+    ........................................................<br>
+    Welcome to Resume Design Project:
+    During this project, we will build an eye-catching resume design step by step!
+
+    You will be given an HTML template, and we will work on its style using CSS.
+
+    Review the task, write your code, commit it to save your progress, and continue the project through each of its
+    stages.
+
+    First, let's write your first and last name at the top and set its font size.
+
+    Task
+
+    1. In the HTML code, change the name in the h1 element to your name.
+
+    2. In the CSS code, select the h1 element and set the font size for it to 28px using the font-size property.
+
+    CSS Example
+
+    h1 {
+    font-size: 28px;
+    }
+    CSS
+    You can set your own values for all of the resume properties during the entire project to achieve your own unique
+    content and style.
+
+    The provided examples are intended solely as a guide.
+    ..........................................................<br>
+
+    START OF PROJECT:
+    ..........................................................<br>
+    <!DOCTYPE html>
+    <html>
+
+    <body>
+        <header>
+            <h1>John Smith</h1>
+            <p id="position">Software Engineer</p>
+        </header>
+        <section>
+            <h2>Summary</h2>
+            <p class="summary"><img src="https://cdn2.iconfinder.com/data/icons/avatars-99/62/avatar-370-456322-512.png"
+                    width="80px" alt="">
+                Deadline-oriented software engineer with lots of experience. Solid track record of architecting
+                solutions that exceed client expectations.</p>
+        </section>
+        <section>
+            <h2>Experience</h2>
+            <ul id="experience">
+                <li>
+                    <b>Senior Software Engineer - Google</b> | 2018 - Present
+                </li>
+                <li>
+                    <b> Software Engineer - Facebook</b> | 2016 - 2018
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <table id="skills">
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Expert</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediate</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Contact Form</h2>
+            <form id="contact-form">
+                <label for="name">Name: </label><input placeholder="Name" id="name" type="text" /><br>
+                <label for="email">Email: </label><input placeholder="Email" id="email" type="email" /><br>
+                <textarea placeholder="Message"></textarea><br>
+                <input type="submit" value="SEND">
+            </form>
+        </section>
+        <footer>
+            <h2>Contacts</h2>
+            <ul id="contacts">
+                <li><a href="link1" target="_blank">Sololearn</a></li>
+                <li><a href="link2" target="_blank">LinkedIn</a></li>
+            </ul>
+            <p id="copyright">Copyright &copy; John Smith</p>
+        </footer>
+    </body>
+
+    </html>
+    ..........................................................<br>
+    =END= =END= =END= =END= =END= =END= =END=
+
+
+    <li>Fill in the required symbols to target all h1, div and section elements.
+        h1,div, section {
+        color: red;
+        }
+        >
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+
+</body>
+
+</html>
