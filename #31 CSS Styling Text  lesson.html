@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Text #31</title>
+</head>
+
+<body>
+    <li>Font Family.........
+        -You can change the font of the text using the font-family property.
+
+        CODE PLAYGROUND:
+        The .html file:
+        <p class="intro">some text</p>
+        <p>some other text</p>
+        The .css file:
+        .intro {
+        font-family: Arial;
+        }
+        Click to run
+        -The given font needs to be available on the user's computer to work.
+
+        -Web Safe Fonts::: There are only a certain number of fonts that are generally available across all systems.
+        These are called web safe fonts and include: Arial, Courier New, Georgia, Times New Roman, Trebuchet MS,
+        Verdana.
+    </li>
+
+    <li>Drag and drop from the options below to make the font of all paragraphs "Verdana":
+        ANSWER:
+        p {
+        font-family:Verdana;
+        }
+    </li>
+
+    <li>Fonts
+        -It's a common practice to define multiple fonts in the font-family property, so that if the first one is not
+        available on for the user, the browser will try the next one:
+
+        CODE PLAYGROUND: CSS
+        .intro {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        Click to run
+        -If the browser does not support the font Arial, it tries the next font (Helvetica Neue, then Helvetica). If the
+        browser doesn't have any of them, it will try the generic sans-serif.
+
+        NOTE-If the font name consists of multiple words, it has to be in quotes.
+    </li>
+
+    <li>In the font-family property, multiple font names should be separated by:
+        CHOICES:
+        brackets
+        dots
+        semicolon
+        commas====
+    </li>
+
+    <li>font-style
+        The font-style property is used to make text italic:
+
+        CODE PLAYGROUND: CSS
+        .intro {
+        font-style: italic;
+        }
+        Click to run
+        Task: Open the code and add multiple properties to the .intro class, making it Arial, 32px in size and red in
+        color.
+
+        ANSWER:
+
+        The .html file:
+        <p class="intro">some text</p>
+        <p>some other text</p>
+
+        The .css file:
+        .intro {
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+        font-size: 32px;
+        }
+    </li>
+
+    <li>QUIZ: Fill in the blanks to create a valid style.
+
+        #banner { font-size: 18px;
+        font-style: italic;
+        color: black;
+        }
+    </li>
+
+    <li>font-weight
+        -The font-weight property is used to make the text bold.
+
+        CODE PLAYGROUND: CSS
+        .intro {
+        font-weight: bold;
+        }
+
+        Click to run
+        -You can also define the font weight with a number from 100 (thin) to 900 (thick). 400 is the same as normal,
+        and
+        700 is the same as bold.
+
+        - Task: Modify the code to use the number format for the font-weight property to make the text bold.
+        ANSWER:
+        The .html file:
+        <p class="intro">some text</p>
+        <p>some other text</p>
+
+        The .css file:
+        .intro { font-weight:700;
+        }
+    </li>
+
+    <li>Which number value of font-weight corresponds to regular bold?
+        CHOICES:
+        600
+        100
+        900
+        700====
+    </li>
+
+    <li>
+        Practice with the Code Repo project below:
+        Let's Set The Font
+        Specify the font for the entire resume and make your position bold.
+        XP
+        +5
+        Practice
+    </li>
+
+    <li>
+        ..........................................................
+        Font Family
+        You are doing great!
+
+        Now, let's specify the font for the entire resume and make your position bold.
+
+        Task
+        1. In the CSS code, select the body element and set the font you prefer using font-family property. This will
+        specify the font for all of the content. We will use Arial in our example, but you can use any other web font.
+
+        2. Make your position bold using the text-weight property.
+
+        Example
+        body {
+        font-family: Arial;
+        }
+        #position {
+        font-size: 18px;
+        font-weight: bold;
+        }
+        CSS
+        Remember that if the name of a font family is longer than one word, it must be in quotation marks.
+        ......................................................
+    </li>
+
+    <li>Drag & drop to make the text bold in all div elements.
+
+        div { font-weight:bold;
+        }
+    </li>
+
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</body>
+
+</html>
