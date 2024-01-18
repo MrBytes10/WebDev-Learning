@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#29 CSS Class & ID Selectors Lesson #29</title>
+</head>
+
+<body>
+    <ul>
+        <li>Class Selector</li>
+        -So far we have seen element selectors, which use the element names and target all of them in the HTML.
+        -Often we need to target only a subset of elements, without changing the others. This can be done using a
+        class selector.
+        -We first need to add a class attribute to the elements we want to target:
+        CODE:
+        <p class="intro">CSS is awesome</p>
+        <p>some other text goes here</p>
+
+        <li>Add a class attribute to the div element and name it "container".</li>
+        <div class="container">
+            <p>some text</p>
+        </div>
+
+        <li>Class Selector..</li>
+        Now, we can create the class selector in CSS:
+        CODE PLAYGROUND: CSS.....
+        .intro {
+        color: red;
+        background-color: yellow;
+        }
+        Click to run
+        -Note, that the class selector needs to start with a dot, followed by the class name that we gave to our
+        element.
+        -You can apply the .intro style rule to any element on your page, by simply adding the class attribute.
+        -Task: Modify the code and add the .intro rule to the last paragraph of the page, too.</li>
+
+        Seel ANSWER below:
+        The .HTML file:
+        <p class="intro">CSS is awesome</p>
+        <p>some other text goes here</p>
+        <p class="intro">another great text</p>
+
+        The .CSS File:
+        .intro {
+        color: red;
+        background-color: yellow;
+        }
+
+        <li>Rearrange the code to create a valid CSS style rule for the class="demo":</li>
+        Answer:
+        .demo {
+        color:green;
+        }
+
+        <li>Selectors </li>
+        We can also create selectors based on the id attribute of elements.
+        This is done by using the hash (#) symbol before the id value:
+        CODE PLAYGROUND: CSS
+        #intro {
+        color: red;
+        background-color: yellow;
+        }
+        Click to run
+        - This will target the element with id="intro" in our HTML.
+        - Remember;-You can have only one element with the same id on the page, while the class value can be used
+        multiple times.
+        See example Below:
+        HTML file:
+        <p id="intro">CSS is awesome</p>
+        <p>some other text goes here</p>
+        <p>another great text</p>
+        CSS file:
+        #intro {
+        color: red;
+        background-color: yellow;
+        }
+
+        <li>QUIZ:Fill in the blanks to give..</li>
+        [a] yellow background color to the element with id="intro",
+        [b] and black text color to the class="demo":
+        SEE ANSWER BELOW:
+        #intro {
+        background-color: yellow;
+        }
+        .demo {
+        color: black;
+        }
+
+        <li>We can also target elements based on their location.</li>
+        -For example, there are two <strong> elements, one inside a paragraph and the other inside a list item.
+            -We can target only the one inside the list item by using the following rule:
+
+            CODE PLAYGROUND: CSS
+            li strong {
+            color: purple;
+            }
+            Click to run
+            -The space denotes that the <strong> element needs to be inside an <li> element.
+                    SEE THE CODE BELOW:
+                    THE .HTML FILE:
+                    <p>This is <strong>awesome</strong></p>
+                    <ul>
+                        <li>some item</li>
+                        <li><strong>another</strong> item</li>
+                    </ul>
+                    THE .CSS FILE:
+                    li strong {
+                    color: purple;
+                    }
+
+
+                <li>QUIZ;Drag & drop to create a rule that targets all paragraphs inside an aside element and makes them
+                    green.</li>
+                ANSWER:
+                aside p {
+                color:green;
+                }
+
+
+                <li>Style Inheritance...</li>
+                -CSS styles set on parent elements are inherited by the child elements.
+                -For example, if you set a color and font on an element, every element inside it will also be styled
+                with that color and font, unless you've applied different color and font values directly to them:
+                CODE:
+
+                The .HTML FILE:
+                <header>
+                    <h1>some title</h1>
+                    <p>some text</p>
+                    <p>another text</p>
+                </header>
+
+                THE .CSS FILE:
+                header {
+                color: red;
+                font-size: 24px;
+                }
+                Click to run;
+                Not all styles are inherited, like the width and other similar layout properties.
+
+                <li>QUIZ: True or False: A single rule can be applied to multiple elements.</li>
+                False
+                True===
+
+                <li> Practice</li>
+                Let's summarize what we have learned:
+
+                - Class selectors use a dot and the class name.
+
+                - ID selectors use a hash # and the ID name.
+
+                - To target nested elements, use a space to define the location of the element (e.g. #intro li will
+                target li elements in the #intro element)
+
+                Practice with the Code Repo project below:
+                ==..................................................................<BR>
+                TASK:::::::::::::::::::::::::::::::::::::::::::::::
+                Font Size
+                Great job!
+
+                It's time to set the font sizes for the content in the different sections of our resume.
+
+                Task:::::::::::::::::::::::::::::::::::::::::::::::
+
+                1. In the CSS code, select the element with id="position" and set its font-size to 18px.
+
+                2. Set the font size of the element with class="summary" to 16px.
+
+                3. Change the text of the elements to your position and your summary in the HTML code.
+
+                Example
+
+                #position {
+                font-size: 18px;
+                }
+                .summary {
+                font-size: 16px;
+                }
+                CSS
+                We used px as the size unit in our example, but you can use pt or em values.
+
+                ==..................................................................<BR>
+
+                <li>QUIZ: Which of the following selectors targets the links inside the footer element?</li>
+                choices:
+                footer link{}
+                footer a{}====
+                footer, a{}
+                footer-a{}
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+    </ul>
+</body>
+
+</html>
