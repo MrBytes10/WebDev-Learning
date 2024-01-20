@@ -1,4 +1,30 @@
+body {font-family: Arial, Helvetica, sans-serif;
+}
 h1 {
     font-size: 28px;
     background-color:rgb(220, 133, 133);
+    text-align: center;
+  }
+
+  #position {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .summary {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  h2 {
+    color: #2F5A78;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+
+  #copyright {
+    text-align: center;
   }

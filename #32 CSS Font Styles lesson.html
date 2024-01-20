@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Font Styles lesson #32</title>
+</head>
+
+<body>
+    <li>TEXT-TRANSFORM ...////////////////
+
+        The text-transform property allows you to transform text with the following values:
+
+        uppercase: Transforms the text to capitals.
+
+        lowercase: Transforms the text to lower case.
+
+        capitalize: Transforms all words to have the first letter capitalized.
+
+        For example:
+
+        CODE PLAYGROUND:
+
+        The .html file:
+        <p class="intro">some text</p>
+        <p>some other text</p>
+        <p class="outro">some text</p>
+
+        The .CSS file:
+        .intro {
+        text-transform: uppercase;
+        }
+        .outro {
+        text-transform: capitalize;
+        }
+        Click to run
+    </li>
+
+
+    <li>QUIZ: Fill in the blanks to make all h1 headings capitalized.
+        h1 {
+        text-transform: capitalize;
+        }
+    </li>
+
+    <li>text-decoration...../////////////
+
+        The text-decoration property supports the following values:
+
+        none: removes any decoration.
+
+        underline: underlines the text.
+
+        overline: gives the text an overline.
+
+        line-through: puts a strikethrough over the text.
+
+        For example:
+
+        CODE PLAYGROUND: CSS
+        .intro {
+        text-decoration: underline;
+        }
+        .outro {
+        text-decoration: line-through;
+        }
+        Click to run
+        Task: Add a class to the middle paragraph and make its text-decoration overline.
+        ANSWER:
+        The .html file:
+        <p class="intro">some text</p>
+        <p class="mid">some other text</p>
+        <p class="outro">some text</p>
+
+        The .css file:
+        .intro {
+        text-decoration: underline;
+        }
+        .outro {
+        text-decoration: line-through;
+        }
+        .mid {text-decoration: overline;
+        }
+    </li>
+
+    <li>Fill in the blanks to put a strikethrough over the text in the class="deleted" elements and make its color red.
+        CSS:
+        .deleted { color: red;
+        text-decoration: line-through;
+        }
+    </li>
+
+    <li>text-shadow ............./////////////
+        The text-shadow property allows you to set a shadow for the text.
+
+        It takes 4 values, like this:
+
+        CODE PLAYGROUND: CSS
+        h1 {
+        text-shadow: 3px 2px 3px red;
+        }
+        Click to run
+        The first value is the horizontal offset of the shadow.
+
+        The second value - the vertical offset.
+
+        The third value is the blur radius: a higher value means the shadow is dispersed more widely.
+
+        The last one is the color of the shadow.
+
+        Task: Modify the code to change the color of the shadow to green.
+        ANSWER:
+        The .html file:
+        <h1>some title</h1>
+        <p class="intro">some text</p>
+        <p>some other text</p>
+        <p class="outro">some text</p>
+        The .CSS file:
+        h1 {
+        text-shadow: 3px 2px 3px green;
+        }
+    </li>
+
+    <li>QUIZ: What is the vertical offset value of the following style?
+        text-shadow: 4px 3px 5px green;
+        CSS
+        3px=====
+        4px
+        5px
+    </li>
+
+    <li>Text Shadow
+
+        You can add multiple shadows, by separating them with a comma.
+
+        For example:
+
+        CODE PLAYGROUND:
+
+        The .html file:
+        <h1>some title</h1>
+        <p class="intro">some text</p>
+        <p>some other text</p>
+        <p class="outro">some text</p>
+
+        THE .css file:
+        h1 {
+        text-shadow: 3px 2px 3px red,
+        2px 2px 1px blue;
+        }
+        Click to run
+    </li>
+
+    <li>To define multiple shadows, you need to separate them using:
+        -dots
+        -curly braces
+        -semicolons
+        -commas====
+    </li>
+
+    <li>Text Alignment.............////////////////////
+
+        The text-align property is used to control how text is aligned within its container.
+
+        The supported values are: left, right, center, justify.
+
+        For example:
+
+        CODE PLAYGROUND:
+
+        The .html file:
+        <h1>some title</h1>
+        <p class="intro">some text</p>
+        <p>some other text</p>
+        <p class="outro">some text</p>
+
+        The .CSS file:
+        h1 {
+        text-align: center;
+        }
+        Click to run
+        Task: Modify the code to align the last paragraph to the right.
+        ANSWER:
+
+        The .html file:
+        <h1>some title</h1>
+        <p class="intro">some text</p>
+        <p>some other text</p>
+        <p class="outro">some text</p>
+
+        The .CSS file:
+        h1 {
+        text-align: center;
+        .outro {
+        text-align: right;
+        }
+        }
+    </li>
+
+    <li>Fill in the blanks to align the text in the header and footer elements to the center.
+
+        header, footer {
+        text-align: center;
+        }
+    </li>
+
+    <li>Line Height........///////////////////
+        The line-height property sets the height of each line of text.
+
+        For example, let's set our line height to be 1.8 times the height of the font:
+
+        CODE PLAYGROUND:
+        The .html file:
+        <h1>some title</h1>
+        <p class="intro">some text some text some text some text some text some text some text some text</p>
+        <p>some other text</p>
+        <p class="outro">some text</p>
+
+        The .CSS file:
+        .intro {
+        line-height: 1.8;
+        }
+        Click to run
+        -The recommended line height is 1.5 - 2 (double spaced.).
+    </li>
+
+    <li>The line-height value 2 indicates that its double the height of:
+        -the page
+        -16px
+        -the font=======
+        -the container
+    </li>
+
+    <li>Letter & Word Spacing....//////////////////////////
+        The letter-spacing and word-spacing properties allow you to set the spacing between letters and words in your
+        text.
+
+        For example:
+
+        CODE PLAYGROUND:
+
+        The .html file:
+        <h1>some title</h1>
+        <p class="intro">some text some text some text some text some text some text some text some text</p>
+        <p>some other text</p>
+        <p class="outro">some text</p>
+
+        The .CSS file:
+        .intro {
+        letter-spacing: 3px;
+        word-spacing: 3px;
+        }
+        Click to run
+        Task: Add a rule to make the letter spacing of the heading text 2px.
+        ANSWER:
+        The .html file:
+        <h1>some title</h1>
+        <p class="intro">some text some text some text some text some text some text some text some text</p>
+        <p>some other text</p>
+        <p class="outro">some text</p>
+
+        The .CSS file:
+        .intro {
+        letter-spacing: 3px;
+        word-spacing: 3px;
+        }
+        h1 {
+        letter-spacing: 2px;
+        }
+    </li>
+
+    <li>Drag and drop to set 3px space between the letters of the class="title" elements and make them capitalized.
+        .title {
+        letter-spacing: 3px;
+        text-transform: capitalize;
+        }
+    </li>
+
+    <li>Practice...........///////////////////////////////////......//////
+        Practice with the Code Repo project below:
+        Time To Style
+        Apply some styling to the elements!
+        XP
+        +5
+        Practice
+    </li>
+
+    <li>Text Styles
+        Let's apply some styling to the elements!
+
+        Task
+
+        1. Change the text of the h1 element to be uppercase using the text-transform property.
+
+        2. Set the line height of the summary section to the value 20px.
+
+        3. Align the text of the header and id="copyright" elements to the center.
+
+        4. Change the text of the copyright note to your custom value in the HTML code.
+
+        CSS Example:
+
+        h1 {
+        font-size: 28px;
+        text-transform: uppercase;
+        }
+        .summary {
+        font-size: 16px;
+        line-height: 20px;
+        }
+        header {
+        text-align: center;
+        }
+        #copyright {
+        text-align: center;
+        }
+    </li>
+
+    <li>Which property is used to set the alignment of the text in an element?
+
+        align-text
+        align
+        text-align
+        font-align
+    </li>
+
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</body>
+
+</html>
