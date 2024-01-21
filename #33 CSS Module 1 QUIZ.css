@@ -1,0 +1,27 @@
+
+
+QUIZ:Fill in the blanks to select the links inside list items.
+ANSWER:
+li a {
+color: blue;
+}
+
+Fill in the blanks to make all h1 headings use the Verdana font, be 24px in size and capitalized.
+ANSWER:
+h1 {
+font-size: 24px;
+font-family: Verdana;
+text-transform: capitalize;
+}
+
+Which of the following is the correct way of changing the text to uppercase?
+text-format: uppercase;
+text-convert: uppercase;
+text-transform: uppercase; ===========
+text-style: uppercase;
+
+Fill in the blanks to set the color of the elements with the id "desc" to "red", and align the text to the right.
+#desc {
+  color: red;
+  text-align: right;
+}
