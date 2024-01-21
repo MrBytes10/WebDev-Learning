@@ -1,0 +1,159 @@
+
+.....Box Size ...../////////////////
+- Similar to using HTML attributes, the width and height can be given using CSS, with the width and height properties.
+- They can take both pixel and percentage values. 
+- For example, let's give the container box 50% of the page width:
+        The .html code:
+        <div class="box">
+        <p>some text</p>
+        </div>
+        The .css CODE: 
+        .box {
+        width: 50%;
+        border: 3px solid red;
+        } 
+Click to run
+- Remember, the final width and height of the box are calculated by adding the padding and border widths.
+
+....////// QUIZ: We have a div with the width: 250px. It has a padding of 20px from all sides, 
+margin of 10px from all sides, and a border of 5px. ../////
+
+What is the actual width of the div?
+290px
+320px
+300px ======
+250px
+
+.....////////// Box Size ......../////////////////
+- Similar to the width, we can also define the height of the elements.
+- For example:
+        CODE: CSS
+        .box {
+        width: 50%;
+        height: 200px;
+        border: 3px solid red;
+        } 
+Click to run
+
+...////////// QUIZ: Drag & drop to set the width and height of the "#square" element to 150px. ..//////
+The .css CODE:
+    #square {
+    width: 150px;
+    height: 150px;
+    }
+
+...////////// Alternative Box Model ...//////////////
+ - It can be inconvenient to calculate the actual size of the box, because of the padding and border widths being added to it.
+- For this reason, CSS provides an alternative box model where the given width is taken by the box and includes the padding and border.
+- The model is turned on using box-sizing: border-box:
+    The .html code::
+        <div class="box">
+            <p>some text</p>
+        </div>
+    The .CSS CODE: 
+        p {
+        margin: 5px 10px 5px 10px;
+        padding: 4px 7px 4px 7px;
+        width: 200px;
+        box-sizing: border-box;
+        border: 3px solid black;
+        }
+Click to run
+- Now, the paragraph box has the width 200px, irrespective of the padding and border widths.
+- Without the box-sizing property it would have the width: 200+7+3+7+3 = 220px.
+
+.....////// What is the height of the following element? ...../////////
+The .css CODE:
+    .div {
+    margin: 5px 10px 5px 10px;
+    padding: 10px 10px 10px 10px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 5px solid black;
+    }
+    CHOICES:
+    230px
+    200px=====
+    240px
+    220px
+    WHY 200PX IS RIGHT: 
+    Your answer is correct because the `height` property explicitly sets the height of the element to 200px. The `margin`, `padding`, and `border` properties do not affect the height of the element, as they only add space around or within the element. The `box-sizing` property ensures that the `padding` and `border` are included within the specified `height` of the element.
+
+    Box Models 
+ 
+
+Let's compare the two box models and create two paragraphs, one using the standard box model and the other one using border-box.
+
+We will use the same styles for both boxes:
+    The .html code::
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+    The .css CODE: 
+        .box1 {
+        border: 3px solid red;
+        padding: 10px 10px 10px 10px;
+        margin: 5px 5px 5px 5px;
+        width: 200px;
+        height: 100px;
+        }
+        .box2 {
+        border: 3px solid red;
+        padding: 10px 10px 10px 10px;
+        margin: 5px 5px 5px 5px;
+        width: 200px;
+        height: 100px;
+        box-sizing: border-box;
+        } 
+Click to run
+Run the code to see how the box-sizing property affects the sizes of the boxes.
+
+QUESTION::
+Fill in the blanks to make a box of the size 200x200, including the size of the padding and border.
+    ANSWER:
+        .box {
+        width: 200px;
+        height: 200px;
+        box-sizing:border-box;
+        padding: 10px 10px 10px 10px;
+        border: 5px solid red;
+        }
+
+        ........./////// Practice ........////////////
+Practice with the Code Repo project below:
+
+- Tweaking The Layout:
+Specify some margins and paddings of your resume elements in order to have a better layout.
+Practice on the CV...........
+
+.//////////.............................................................................///////////
+Tweaking the Layout 
+The layout you use is of great importance in terms of the visual appearance of the content.
+
+Let's specify some margins and paddings of your resume elements in order to have a better layout.
+
+We will define padding for our core sections.
+
+Task
+1. Add a padding of 10px from left and right, 2px from top and bottom for the section and footer elements.
+
+2. Set the margin of the ul element to 0, as it has some default margins.
+
+Example
+section, footer {
+  padding: 2px 10px;
+}
+ul {
+  margin: 0px;
+}
+CSS
+Note, that we can target multiple elements by separating them with a comma in the CSS.
+.//////............................................................................//////////////
+
+
+......////////////// QUIZ: What is the bottom padding of the following style? ......../////////////////
+padding: 10px 5px 7px 15px;
+CSS ANSWER:
+    10px
+    7px=====
+    15px
+    5px
