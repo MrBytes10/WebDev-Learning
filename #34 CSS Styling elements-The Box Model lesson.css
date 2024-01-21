@@ -1,0 +1,147 @@
+
+-------------The Box Model .............//////////////////
+ -HTML elements appear as boxes. 
+-The box model defines how the different parts of the box -  margin, border, padding, and content, work together to create the box.
+-Here are the parts of the box:
+img-component --c:\Users\ADMIN\Downloads\[margin, border, padding, and content boxes, in csss.png]
+-The content box is the area where the content is displayed.
+-The padding box is the white space around the content.
+-The border box comes after the padding.
+-The margin box is the last one and defines the space between this box and other elements.
+We will see how to define these boxes and control their size.
+
+
+QUIZ: The space between the current box and other elements is called:
+border box
+content box
+padding box
+margin box =======
+
+
+...........The Standard Box Model..............///////////////////// 
+-In the standard box model, the height and width attributes define the size of the content box.
+-Any padding and border is then added to that width and height to get the total size of the box.
+-For example, the total width of the box with paddings will be the sum of width plus padding left and padding right.
+img-component
+-The margin is not counted towards the actual size of the box, it is the space outside the box.
+
+........QUIZ: What is the correct order of the boxes from the innermost to the outermost one?.....///////////
+content->border->padding->margin
+content->padding->margin->border
+content->padding->border->margin =========
+
+........Margin........../////////////////////////
+-The margin is the space around your box.
+-We can control all margins of an element at once using the margin property, in the following order: top, right, bottom, and left. 
+-For example, let's add a paragraph inside a class="box" container:
+CODE:
+<div class="box">
+  <p>some text</p>
+</div>
+
+
+............Margin....////////////////
+ - Now, let's give the paragraph some margins and see how it behaves:
+CODE PLAYGROUND: 
+The .html file:
+<div class="box">
+  <p>some text</p>
+</div>
+
+The .CSS file:
+p {
+  margin: 5px 10px 5px 10px;
+  border: 3px solid black;
+}
+.box {
+  border: 3px solid red;
+} 
+Click to run
+- Margins can have positive or negative values.
+- We defined borders for our boxes to see them and their margins. We will learn more about borders in the next lessons.
+
+
+........What is the bottom margin of the following element?............/////////////
+.demo {
+  margin: 6px 3px 2px 5px;
+}
+CHOICES:
+3px
+5px
+6px
+2px=======
+
+.........Margin.........../////////////////////
+-The margins can be provided using separate properties.
+The following style:
+
+margin: 5px 10px 5px 10px; 
+in css
+is equivalent to:
+
+CODE: CSS
+margin-top: 5px;
+margin-right: 10px;
+margin-bottom: 5px;
+margin-left: 10px; 
+Click to run
+...........Task: Modify the code to also give margins to the outside box. .........//////////////
+ANSWER:
+The .html file:
+<div class="box">
+  <p>some text</p>
+</div>
+The .css file:
+p {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px; 
+    border: 3px solid black;
+  }
+  .box {
+    border: 3px solid red;
+      margin-top: 7px;
+    margin-right: 16px;
+      margin-bottom: 8px;
+    margin-left: 10px;
+  } 
+
+  ......Fill in the blanks to give the element with class="test" a margin top of 20px and a margin left of 10px; ......////
+ANSWER:
+  .test {
+  margin-top: 10px;
+  margin-left: 20px;
+  }
+
+  ......Padding .........///////////////////
+ -The padding is the area between the border and the content. 
+-It is defined similar to the margin:
+
+CODE PLAYGROUND: CSS
+p {
+  margin: 5px 10px 5px 10px;
+  padding: 4px 7px 4px 7px;
+  border: 3px solid black;
+} 
+Click to run
+-Run the code to see the result!
+-Task: Change the padding to be 10px on all sides.
+ANSWER:
+The .html file:
+<div class="box">
+  <p>some text</p>
+</div>
+The .css file:
+p {
+    margin: 5px 10px 5px 10px;
+    padding: 10px 10px 10px 10px;
+    border: 3px solid black;
+  }
+
+  ....QUIZ: Fill in the blanks to give all paragraphs a padding of 20px from the left and right sides, and 10px from top and bottom. ....//////////
+ANSWER:
+p { 
+padding: 10px 20px 10px 20px;
+}
+  
