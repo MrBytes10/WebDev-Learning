@@ -1,0 +1,136 @@
+
+........///////// Border .........///////////// 
+-The border property allows you to set the border style for the elements.
+-CODE PLAYGROUND: 
+    The .html code:
+        <div class="box">
+        some text
+        </div>
+    The .css code:
+        .box {
+        border: 3px solid red;
+        }
+Click to run
+The property takes 3 values:
+- the width in pixels,
+- the border style,
+- the border color.
+If not defined, the border is not visible.
+
+......./////////// Drag & drop to create a blue border of 5px for the "header" element. .....////////////
+    ANSWER:
+        header {
+        border:5px solid blue;
+        }
+
+ ....////////// Border Styles .....///////////////////
+ - The border style can take one of the following values:
+  dotted, dashed, solid, double, groove, ridge, inset, outset.
+ - For example:
+  CODE: 
+    The .html code:
+        <div class="box">
+        some text
+        </div>
+    The .css code:
+        .box {
+        border: 3px dashed green;
+        }
+ Click to run
+ Task: Modify the code and set the style of the border to groove. 
+ 
+ ....////// True or False: By default, elements do not have a border. .....//////////////////
+    ANSWER:
+    False===
+    True
+
+ ......///// Border Styles .......///////////////////////////
+ - Similar to paddings and margins, the border supports separate properties to set the border for each side, e.g.: border-top, border-bottom, etc.
+ - For example:
+         CODE PLAYGROUND:
+         The .html file:
+            <div class="box">
+            some text
+            </div> 
+         The .css file:
+            .box {
+            border-top: 3px dashed green;
+            border-bottom: 5px solid red;
+            }
+ Click to run
+ -NB:- Each side of the border can have its own style.   .....
+
+ ....////////// Fill in the blanks to create a solid black border only at the bottom of the h1 element. ...///////////
+    ANSWER:
+        h1 {
+        border-bottom: 2px solid black;
+        }
+
+ ...//////// Border Radius ....../////////////////////
+ - The border-radius property allows you to round the corners of elements.
+  For example:
+     CODE
+     The .html file:
+        <div class="box">
+          some text
+        </div> 
+     The .css file:
+            .box {
+            border: 3px solid green;
+            border-radius: 10px;
+            } 
+ Click to run
+ - A single value provided uses that value for all 4 corners. 
+ - You can also set the border radius for each corner separately, by separating them with spaces.
+ - The radius applies to the whole element, even if it has no border set. 
+ 
+ .....////////////// QUIZ: What shape is the result of the following? .........////////////////////////
+        .box {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: 1px solid black;
+        }
+        CSS
+        rectangle
+        square
+        circle==========
+        line
+
+....../////////// Practice ........////////////////////
+
+Practice with the Code Repo project below:
+Styling the Headings
+Add border to the section headings.
+XP
++5
+Practice
+
+.................../////////// START OF Practice ....................................................////////////////////
+        Styling the Headings 
+        Let's add a border to the section headings.
+
+        Task
+        1. Add a 1px solid border to the bottom of the h2 elements using the color #2F5A78.
+
+        2. To make them visually more appealing, add a 2px padding to the bottom of the h2 elements.
+
+        CSS Example:
+        h2 {
+        color: #2F5A78;
+        font-size: 20px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #2F5A78;
+        } 
+        CSS
+        You can customize the text of the headings by changing them in the HTML code.
+.........................../////////// END OF Practice ...............................................////////////////////
+
+QUIZ::
+    For which sides this code will set a red border?
+    border: 1px solid red;
+    CHOICES:
+    all four sides=========
+    only top
+    only bottom
+    left and right sides
