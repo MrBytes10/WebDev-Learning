@@ -1,0 +1,198 @@
+
+............//////// Background ............////////////
+- The background-color property sets the background color for an element.
+
+CODE:
+The .html file:
+    <div class="box">
+  some text
+    </div>
+The .css file:
+        .box {
+        background-color: red;
+        height:100px;
+        padding: 10px;
+        } 
+Click to run
+- You can set the color using color names, hex values and rgb.
+
+Task: Open the code and change the background color of the box to blue.
+
+....../////////// QUIZ: Fill in the blanks to set the background color of the footer element gray. ...............////////////////////
+    ANSWER:
+    footer { 
+        background-color: gray;
+    }
+
+.........////// Background Image ..........//////////////////////////
+    - You can also set an image as the background of an element, using the background-image property.
+    -    It has the following syntax:
+        CODE:
+    The .html file:
+        <div class="box">
+        some text
+        </div>
+    The .css file:
+        .box {
+        background-image: url('sl-logo.png');
+        height:150px;
+        padding: 10px;
+        }
+    Click to run
+    The image address has to be put in quotes and enclosed by the url() attribute.
+    
+    A small image is, by default, tiled to fill the box.
+    
+    In case the image is larger than the element, it is not scaled down by default and we will see only the part that fits in the box.
+    CODE:
+    The .html file:
+        <div class="box">
+        some text
+        </div>
+    The .css file:
+        .box {
+            background-image: url('https://sololearnassets.azureedge.net/sl-logo.png');
+            height:150px;
+            padding: 10px;
+        } 
+
+......///////// QUIZ: Fill in the blanks to set the background image of the header element to the image 'banner.png'. .../////////
+
+Also, set the height of the element to 200px;
+    ANSWER:
+        header {
+        background-image: url('banner.png');
+        height: 200px;
+        }
+
+ .....////// The background-repeat property can control how the image is tiled (or repeated) in the box. ........./////////////// 
+ - It can take the following values:
+    no-repeat: does not tile the image.
+    repeat-x: repeat horizontally.
+    repeat-y: repeat vertically.
+    repeat: repeat in both directions (default value).
+
+- Let's change our background to repeat only horizontally:
+CODE:
+The .html file:
+    <div class="box">
+    some text
+    </div>
+The .css file:
+    .box {
+        background-image: url('https://sololearnassets.azureedge.net/sl-logo.png');
+        background-repeat: repeat-x;
+        height:150px;
+        padding: 10px;
+    } 
+Click to run
+Task: Modify the code to remove the tiling of the background image.
+ 
+ 
+ .....////// QUICK: Drag and drop to set the background of the .demo element to 'logo.png' and repeat it vertically. .........///////////////  
+    ANSWER:
+        .demo {
+        background-image: url('logo.png');
+        background-repeat:repeat-y;
+        height: 500px;
+        }
+    
+ .....////// The background-position property sets the position in which the background image appears. ........./////////////// 
+- It uses a coordinate system in which the top-left corner of the box is at position (0,0).
+- As its value, it can take both pixel/percentage units and keywords (top, left, right, bottom, center).
+- Let's position our background image at the horizontal and vertical center of the box:
+CODE: 
+    The .html file:
+        <div class="box">
+        some text
+        </div>
+    The .css file:
+    .box {
+        background-image: url('https://sololearnassets.azureedge.net/sl-logo.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        height:150px;
+        padding: 10px;
+        border: 1px solid black;
+    } 
+Click to run
+- The default background-position value is (0,0): the top-left corner.
+
+ .....////// By default, the background image is positioned at the: .........///////////////   
+  bottom-left corner
+ top-left corner
+ bottom-right corner
+ top-right corner
+
+ .....////// Background Size.........///////////////
+- The background-size property allows you to define how the image should fit inside the box.
+- It has two possible values:
+    = cover: The image will completely cover the box, while maintaining its aspect ratio. 
+    = contain: The image will fit inside the box completely.
+- For example:
+CODE:
+    The .html file:
+        <div class="box">
+        some text
+        </div>
+    The .css file:
+        .box {
+            background-image: url('https://sololearnassets.azureedge.net/sl-logo.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height:150px;
+            padding: 10px;
+            border: 1px solid black;
+        }  
+Click to run
+- Task: Modify the code to use the other value of the background-size property and see how it changes the result.
+ 
+ .....////// QUIZ:Fill in the blanks to make the image 'avatar.png' fit completely inside the box and position it at the center. .........///////////////
+    ANSWER CODE:
+        .box {
+        background-image: url('avatar.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        }
+ 
+
+ .....////// START OF PRACTICE........./////////////// 
+ Background Color 
+ Ok, this one will be easy!
+ 
+ Let's add a background color to our header and footer sections to visually separate them from the others.
+ 
+ Task
+ 1. Set the background color of the header and footer elements to the hex #eeeeee.
+ 
+ 2. To make the header titles breathe, add top and bottom paddings of 2px.
+ 
+ Header Example
+ header {
+   text-align: center;
+   background-color: #eeeeee;
+   padding-top: 2px;
+   padding-bottom: 2px;
+ }
+ CSS
+ img-component
+ Footer Example
+ 
+ footer {
+   background-color: #eeeeee;
+ }
+ CSS
+ img-component
+ You can change the color to any other custom color you like and also define background colors for other sections -- it's up to you.
+
+ .....////// END OF PRACTICE........./////////////// 
+
+
+
+ .....////// QUIZ........./////////////// 
+ True or False: The background-color property sets a color for the background only if the element has a border defined.
+    True
+    False=====
+
+ .....////// .........///////////////   
