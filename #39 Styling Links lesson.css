@@ -1,0 +1,175 @@
+
+..////////////// Styling Links .....///////////////////////////// 
+- A link is by default blue in color and underlined. 
+- We can style links with CSS properties (e.g., color, font-family, background, etc.).
+CODE: 
+    The .html file:
+        <a href="#">some link</a>
+    The .css file:
+        a {
+        color: green;
+        } 
+Click to run
+- In addition, links can be styled differently, depending on what state they are in. 
+  The following selectors are available:
+    a:link - defines the style for normal unvisited links.
+    a:visited - defines the style for visited links.
+    a:active - a link becomes active once you click on it.
+    a:hover - a link is hovered when the mouse is over it.
+These are called pseudo selectors.
+
+..////////////// Which selector is used to style links that have been visited? .....///////////////////////////// 
+    a:hover
+    a:history
+    a:visited=====
+    a:past
+
+
+..////////////// Let's add a background color to the links, when they are hovered: ...../////////////////////////////
+Styling Links 
+    CODE:
+        The .html file:
+            <a href="#">some link</a>
+        The .css file:
+            a:hover {
+            background-color: yellow;
+            } 
+Click to run
+Task: Modify the code to give a black border on the links, when they are hovered over.
+
+
+..////////////// QUIZ:Fill in the blank to create valid pseudo selector for the links:  ...../////////////////////////////
+    ANSWER:
+    a:hover {
+    color: red;
+    }
+
+
+..////////////// By default, all links are underlined. ...../////////////////////////////
+- We can remove the underline using the text-decoration property:
+- CODE:
+    The .html file:
+        <a href="#">some link</a>
+    The .css file:
+        a {
+        color: green;
+        text-decoration: none;
+        }
+Click to run
+= Task: Modify the code to add the underline to the links when they are hovered.
+ANSWER::
+    The .html file::
+        <a href="#">some link</a>
+    The .css file:
+        a {
+            color: green;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: yellow;
+            text-decoration: underline;
+        }
+
+
+..///////// QUIZ: Fill in the blanks to style all links on the page. 
+  Give them a red color, remove the underline, and make them bold. ...../////////////////////////////
+Answer CODE:
+    a {
+    color: red;
+    text-decoration:none;
+    font-weight: bold;
+    }
+
+
+..////////////// It is common to style links as buttons and use them for navigation menus.  ...../////////////////////////////
+- First, we put the links inside an unordered list:
+        The .html file:
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul> 
+ Now, the CSS:
+            CODE:
+        The .css file:
+            li {
+            display: inline;
+            }
+            a {
+            outline: none;
+            text-decoration: none;
+            display: inline-block;
+            margin-left: 1%;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            width: 31%;
+            color: white;
+            background-color: green;
+            }
+            a:hover {
+            background: blue;
+            } 
+Click to run
+- We set the display property to inline for list items to make them sit on the same line with the others, acting as inline elements.
+
+
+..////////////// QUIZ: Which property makes the list items act as inline elements?...../////////////////////////////
+CHOICES:
+    padding
+    display====
+    margin
+    width
+
+    ..//////////////  PRACTICE...../////////////////////////////
+    Practice 
+    Practice with the Code Repo project below:
+    
+    widgetImg
+    Links
+    Time to style the links in the footer.
+    XP
+    +5
+    Practice
+
+..//////////////  START OF PRACTICE.....////////////////////////////
+        Links 
+        Great progress! Time to style the links in the footer.
+
+        Task
+        1. In the HTML code, modify the links in the footer and add your own account links. 
+
+        2. In the CSS code, set the color of the links to #e99f4b.
+
+        3. Also, remove the underline using the text-decoration property.
+
+        4. For the hover effect, set the text-decoration to underline. 
+
+        CSS Example:
+        footer a {
+        color: #e99f4b;
+        text-decoration: none;
+        }
+        footer a:hover {
+        text-decoration: underline;
+        } 
+        CSS
+        img-component
+        You can set the color of the bullet points by setting the color of the li elements in the footer.
+
+..////////////// END OF PRACTICE ...../////////////////////////////
+
+
+
+..////////////// QUIZ: Fill in the blanks to set the link color to blue, and change it to black when hovered. ...../////////////////////////////
+ANSWER:
+a 
+ {
+  color: blue;
+} 
+a:hover {
+  color: black;
+}
+
+
+..//////////////  ...../////////////////////////////
