@@ -1,0 +1,163 @@
+
+..........////// Styling Lists .......///////////////////////////
+- By default, unordered list items are marked with round bullets, while ordered lists are numbered.
+- The list-style-type property allows you to change the markers to circle, square, decimal, disc, lower-alpha, lower-roman, etc.
+CODE:
+    The .html file:
+        <ul> 
+        <li>Apples</li>
+        <li>Milk</li>
+        <li>Eggs</li>
+        </ul>
+    The .css file:
+        ul {
+        list-style-type: square; 
+        }
+Click to run
+Task: Modify the code to use roman numerals for the list using the lower-roman value.
+ANSWER:
+    The .html file:
+        <ul> 
+        <li>Apples</li>
+        <li>Milk</li>
+        <li>Eggs</li>
+        </ul>
+    The .css file:
+        ul {
+        list-style-type: lower-roman; 
+        }
+
+.......////// QUIZ:Drag & drop to change the bullet markers to circles: .......//////////////////
+ANSWER:
+    ul {
+    list-style-type: circle;
+    }
+
+..........////// The list-style-position property specifies the position of the bullets: inside or outside.....///////////////////////////
+CODE:
+    The .html file:
+        <ul> 
+        <li>Apples</li>
+        <li>Milk</li>
+        <li>Eggs</li>
+        </ul>
+    The .css file:
+        ul {
+        list-style-type: circle;
+        list-style-position: inside;
+        }
+Click to run
+The default value is outside.
+
+..........////// QUIZ: The default value of the list-style-position property is:.......////////////////////
+    inside
+    inset
+    left
+    outside====
+
+.....////// The list-style-image property can be used to specify an image to be used as the list item marker......///////////////////////////
+Styling Lists 
+    CODE:
+        The .html file:
+            <ul> 
+                <li>Apples</li>
+                <li>Milk</li>
+                <li>Eggs</li>
+            </ul>
+        The .css file:
+            ul {
+            list-style-image: url('https://www.sololearn.com/images/bullet.jpg');
+            }
+Click to run
+- However, this property does not allow you to control the position and size of the image.
+- If you want to use an image as the marker, it's better to set the list-style-type to none and
+ add a background image to the list items with the marker image, positioning it to the left.
+
+
+..........////// QUIZ: Fill in the blanks: .......///////////////////////////
+CODE:
+    ul {
+    list-style-type: square;
+    list-style-position: outside;
+    list-style-image: url('demo.png');
+    }
+
+..........////// The list-style property is a shorthand for setting 
+list-style-type, list-style-image and list-style-position, all in one declaration:......./////////////////
+CODE:
+    <ul> 
+        <li>Apples</li>
+        <li>Milk</li>
+        <li>Eggs</li>
+    </ul>
+        ul {
+        list-style: square outside none;
+        }
+    Click to run
+
+    OR NOTE::::This list styling would be the same as:
+    ul {
+    list-style-type: square;
+    list-style-position: outside;
+    list-style-image: none;
+    }
+
+
+.......////// Fill in the blanks to create the equivalent to the following: .......///////////////////////////
+    CODE:
+        ul {
+        list-style-type: circle;
+        list-style-position: inside; 
+        list-style-image: url('demo.jpg');
+        }
+        ANSWER: CSS similar code:
+            ul {
+            list-style:circle inside url('demo.jpg');
+            }
+
+
+......////// PRACTICE.......///////////////////////////
+Practice 
+Practice with the Code Repo project below:
+
+Career Path
+Describe and design your work experience and/or education.
+XP
++5
+Practice
+
+......////// START OF PRACTICE.......///////////////////////////
+Experience 
+Now it's time to describe and design your work experience and/or education, to highlight y​​our career path and skill development.
+
+Task
+1. In the HTML code, add your experience and/or education information to the list. The Job title and position need to be in a <b> tag.
+
+2. In the CSS code, set the color of the text of the <b> elements to #2F5A78. Set the CSS rule for the <b> elements that are in an <li> element.
+
+3. Add a bottom margin of 5px to the list items.
+
+CSS Code Example
+li b {
+  color: #2F5A78;
+}
+li {
+  margin-bottom: 5px;
+} 
+CSS
+img-component
+We provide guidance for the experience section only below, but you may add a section about your education in the same format if desired.
+......////// END OF PRACTICE.......///////////////////////////
+
+
+......//////    QUIZ.......///////////////////////////
+Which property changes the bullet marker of a list?
+    list-marker
+    list-style-icon
+    list-style-marker
+    list-style-type=====
+
+
+..........////// .......///////////////////////////
+
+
