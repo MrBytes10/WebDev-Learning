@@ -1,0 +1,297 @@
+
+...///// Styling Forms  ...////////////////////////////////////////////////
+- Let's take a sample form and add some style to it.
+- Here is the HTML:
+CODE:
+    The .html file:
+        <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="John Smith"> 
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="name@domain.com">
+        <br><br>
+        <input type="button" value="Send">
+        </form>  
+Click to run
+- The text fields have a default size and a black border.
+
+...///// Fill in the blanks to make a text field....////////////////////////////////////////////////
+AnSWER:
+<input type="text">
+
+...///// We can add styling to the text fields and labels by selecting them using their name:...////////////////////////////////////////////////
+Styling Forms 
+CODE:
+    The .html file: 
+        <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="John Smith"> 
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="name@domain.com">
+        <br><br>
+        <input type="button" value="Send">
+        </form> 
+    The .css file: 
+        input {
+            border:1px solid green;
+            width:100%;
+            padding: 5px;
+        }
+        label {
+            font-weight: bold;
+            color:green;
+        }
+Click to run
+- The style will also apply to the button, as it is also an input element.
+
+...///// Remove the borders from the input elements. ...////////////////////////////////////////////////
+ANSWER: 
+    input
+    {
+    border: none;
+    }
+
+...///// We can target the input elements by their type using the following syntax: ...////////////////////////////////////////////////
+Styling Forms 
+CODE: 
+    The .html file: 
+    <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="John Smith"> 
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="name@domain.com">
+        <br><br>
+        <input type="button" value="Send">
+    </form> 
+    The .css file: 
+        input[type='text'] {
+            border:1px solid green;
+            width:100%;
+            padding: 5px;
+        }
+        label {
+            font-weight: bold;
+            color:green;
+        }
+Click to run
+- This will only apply the style to <input type="text"> elements.
+
+Task: Modify the code to also apply the style to the email type inputs.
+ANSWER:
+    The .html file: 
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="John Smith"> 
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="name@domain.com">
+            <br><br>
+            <input type="button" value="Send">
+        </form> 
+    The .css file: 
+         input[type='text'] {
+                border:1px solid green;
+                width:100%;
+                padding: 5px;
+                }
+            input[type='email'] {
+                border:1px solid blue;
+                width:100%;
+                padding: 5px;
+                color: blue;
+            }
+            label {
+                font-weight: bold;
+                color:green;
+            }
+
+...///// Fill in the blanks to target the inputs with the type='tel'. ...////////////////////////////////////////////////
+    ANSWER: 
+        input[type='tel'] {
+        color: blue;
+        }
+
+...///// We can also style the text inside the text fields, just like any other text. ...////////////////////////////////////////////////
+Styling Forms 
+- Let's make it green and bold:
+CODE:
+    The .html file: 
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="John Smith"> 
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="name@domain.com">
+            <br><br>
+            <input type="button" value="Send">
+        </form> 
+    The .css file: 
+        input[type='text'], input[type='email'] {
+            border:1px solid green;
+            width:100%;
+            padding: 5px;
+            color: green;
+            font-weight: bold;
+        }
+        label {
+            font-weight: bold;
+            color:green;
+        }
+Click to run
+
+...///// Similarly, we can apply a style to our button: ...////////////////////////////////////////////////
+Styling Forms 
+CODE:
+    The .html file: 
+        <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="John Smith"> 
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="name@domain.com">
+        <br><br>
+        <input type="button" value="Send">
+        </form>  
+    The .css file:
+        input[type='text'], input[type='email'] {
+            border:1px solid green;
+            width:100%;
+            padding: 5px;
+        }
+        label {
+            font-weight: bold;
+            color:green;
+        }
+        input[type='button'] {
+            background-color: green;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+            color: white;
+        }
+Click to run
+We used border:none to remove the default border from the button.
+
+...///// Fill in the blanks to make the text on reset buttons white, and give them a black background-color. ...////////////////////////////////////////////////
+    ANSWER:
+       input[type='reset'] {
+        background-color:black;
+        color:white;
+        }
+
+...///// Just like link states, we can use the :hover pseudo selector to style the button, when it is hovered:...////////////////////////////////////////////////
+Styling Forms 
+code:-- 
+    input[type='button']:hover {
+    background-color: gray;
+    } 
+...................................................................
+THE FULL CODE: 
+    The .html file: 
+        <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="John Smith"> 
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="name@domain.com">
+        <br><br>
+        <input type="button" value="Send">
+        </form> 
+    The .css file: 
+        input[type='text'], input[type='email'] {
+        border:1px solid green;
+        width:100%;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    label {
+        font-weight: bold;
+        color:green;
+    }
+    input[type='button'] {
+        background-color: green;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-weight: bold;
+        color: white;
+    }
+    input[type='button']:hover {
+    background-color: gray;
+    }
+Click to run
+- Now, the button will turn gray when we move the mouse over it.
+- Task: Modify the code and round the corners of the text fields by adding the border-radius property, similar to the button.
+
+...///// :hover is called a: ...////////////////////////////////////////////////
+ANSWER: 
+type selector
+element selector
+pseudo selector =======
+
+...///// ...////////////////////////////////////////////////
+Practice 
+Practice with the Code Repo project below:
+
+widgetImg
+Contact Form
+Style the contact form!
+XP
++5
+Practice
+...............................................................................................
+
+...///// START OF PRACTICE...////////////////////////////////////////////////
+Contact Form 
+Let's style the contact form!
+
+Task
+1. Add a 1px solid border to the text and email inputs using the color #2F5A78. Set a width of 150px to them, a padding of 5px and a bottom margin of 5px.
+
+2. Apply the same style to the textarea field, and set its width to 203px.
+
+3. For the label elements, set the text color to #2F5A78 and make them bold.
+
+4. For the submit button, set the background color to #2F5A78, remove the border and set a border-radius of 7px. Make the button's text white and bold and set a bottom margin of 7px.
+
+CSS Example:
+input[type='text'], input[type='email'] {
+  border: 1px solid #2F5A78;
+  width: 150px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+textarea {
+  border: 1px solid #2F5A78;
+  width: 203px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+label {
+  font-weight: bold;
+  color: #2F5A78;
+}
+input[type='submit'] {
+  background-color: #2F5A78;
+  border: none;
+  border-radius: 7px;
+  padding: 7px 15px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 7px;
+} 
+CSS
+
+...///// END OF PRACTICE....////////////////////////////////////////////////
+
+
+...///// Fill in the blanks to target the submit button. ...////////////////////////////////////////////////
+    ANSWER: 
+        input[type='submit'] {.....................
+            ............}
+
+...///// ...////////////////////////////////////////////////
