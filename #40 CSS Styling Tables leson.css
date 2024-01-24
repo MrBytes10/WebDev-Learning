@@ -1,0 +1,361 @@
+
+..../////// Styling Tables .......////////////////////////
+An HTML table doesn't look appealing by default:
+    CODE:
+        The .html code:
+            <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Amy</td>
+                <td>42</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>19</td>
+            </tr>
+            </table> 
+Click to run
+Run the code to see the table without any styling.
+
+..../////// QUIZ: Fill in the required tags to make a valid table. .......////////////////////////
+    ANSWER:
+        <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        </table> 
+
+..../////// Styling Tables - basic styles to a table.......////////////////////////
+- Let's add some basic styles to our table:
+    CODE:
+    The .html file:
+        <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Amy</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>19</td>
+        </tr>
+        </table> 
+    The .css file:
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+        td, th {
+        border:1px solid black;
+        text-align: center;
+        } 
+Click to run
+- The table cells have spacing between them by default, making double borders appear. 
+- The border-collapse property sets the borders to collapse into one, making the table look a lot better.
+- Run the code to see the result.
+
+..../////// QUIZ: Make the borders of the table cells collapse into one. .......////////////////////////
+CODE:
+    The .css file answer:
+        table {
+        border-collpse:collapse;
+        }
+
+..../////// .......////////////////////////
+Styling Tables 
+We can also provide some padding to the cells, to give the content some space to "breathe":
+CODE: 
+    The .html file: 
+     <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Amy</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>19</td>
+        </tr>
+     </table> 
+    The .css file:
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td, th {
+        border:1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+Click to run
+= NB: We have also aligned the text in all cells to the center.
+
+..../////// Fill in the blanks to provide only a top padding of 5px to the table cells. .......////////////////////////
+    CODE:
+        td {
+        padding-top: 5px;
+        }
+
+..../////// Now, we can assign a background color to our heading cells: .......////////////////////////
+Styling Tables 
+CODE:
+    The .html file: 
+        <table>
+            <tr>
+            <th>Name</th>
+            <th>Age</th>
+            </tr>
+            <tr>
+            <td>Amy</td>
+            <td>42</td>
+            </tr>
+            <tr>
+            <td>Bob</td>
+            <td>19</td>
+            </tr>
+        </table> 
+    The .css file: 
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border:1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #d3d3d3;
+        }
+Click to run
+- Task: Modify the code to make the heading texts appear white with a black background.
+ANSWER: 
+    The .html file: 
+        <table>
+            <tr>
+            <th>Name</th>
+            <th>Age</th>
+            </tr>
+            <tr>
+            <td>Amy</td>
+            <td>42</td>
+            </tr>
+            <tr>
+            <td>Bob</td>
+            <td>19</td>
+            </tr>
+        </table> 
+    The .css file: 
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border:1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            color:white;
+            background-color: black;
+        }
+
+..../////// Fill in the blanks to assign a blue background color and a red border to the whole table. .......////////////////////////
+ANSWER:
+ table {  
+    background-color: blue;  
+    border: 1px solid red;
+    }
+
+..../////// Select specific rows and style them. .......////////////////////////
+Styling Tables 
+- We can make the rows even more interesting!
+- CSS provides the nth-child() pseudo selector, which allows you to select specific rows and style them.
+- For example, we can style the 3rd row like this:
+CODE:
+    The .html file: 
+     <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Amy</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>19</td>
+        </tr>
+     </table> 
+    The .css file: 
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border:1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #d3d3d3;
+        }
+        tr:nth-child(3) {
+            background-color: #b0d1e4;
+        }
+Click to run:
+- The rows are counted from the top to the bottom, including the heading rows.
+
+..../////// Fill in the blanks to make the text of the 2nd row bold. .......////////////////////////
+    ANSWER:
+        tr:nth-child(2) {
+        font-weight: bold;
+        }
+
+..../////// The nth-child selector allows you to also define rules for the rows, instead of providing the number. .......////////////////////////
+Styling Tables 
+- For example, we can style the odd and even rows separately, giving them different background colors:
+..CODE:
+    The .html file: 
+        <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Amy</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>24</td>
+        </tr>
+        </table>  
+    The .css file: 
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border:1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #d3d3d3;
+        }
+        tr:nth-child(even) {
+            background-color: #b0d1e4;
+        }
+        tr:nth-child(odd) {
+            background-color: #6aabd1;
+        }
+Click to run
+- This will automatically apply the assigned styles to the odd and even rows.
+
+- Task: Add some new rows to the table and see how they take the style automatically.
+ANSWER: 
+    The .html file: 
+        <table> 
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Amy</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Augastine</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Juniour</td>
+            <td>26</td>
+        </tr>
+        </table>  
+    The .css file: 
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border:1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #d3d3d3;
+        }
+        tr:nth-child(even) {
+            background-color: #b0d1e4;
+        }
+        tr:nth-child(odd) {
+            background-color: #6aabd1;
+        }
+
+
+..../////// Fill in the blanks to create a selector that targets the even rows of the table. .......////////////////////////
+ANSWER::
+    tr:nth-child-(even) {..
+        ..}
+
+
+
+....///////   START OF PRACTICE ....////////////////////////
+        Skills 
+        The skills section is a table. Let's add your skills and make it visually more appealing!
+
+        Task
+        1. Add your skills and proficiency level in the HTML by adding new rows to the table. 
+
+        2. Set the background-color of the table header cells to #2F5A78, and the text color to #FFFFFF. Also, align the text to the center.
+
+        3. Set the border-collapse property to collapse on the table.
+
+        4. Add a 1px solid border to the td and th elements with the color #000000. Also, add a padding of 5px for all sides.
+
+        CSS Example:
+        table { 
+        border-collapse: collapse; 
+        } 
+        td, th { 
+        border:1px solid #000000; 
+        padding: 5px;
+        } 
+        th { 
+        background-color: #2F5A78; 
+        color: #FFFFFF;
+        }
+        CSS
+        img-component
+        -- You can customize the table further by styling the rows of the table. For example, you can set a different background color for odd and even rows.
+....///////  END OF PRACTICE.......////////////////////////
+
+
+
+....///////  .......////////////////////////
+....///////  .......////////////////////////
