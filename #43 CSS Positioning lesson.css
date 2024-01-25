@@ -1,0 +1,278 @@
+
+    CSS POSITIONING LESSON:
+../////// Float ....//////////////////////////////////// 
+- The float property allows you to float an element inside a container.
+- For example, we can float an image in a text, to make the text wrap on one side of it:
+    img {
+        float: left;
+    }
+The exact code........................
+    CODE: 
+        The .html file: 
+            <img src="https://sololearnassets.azureedge.net/sl-logo.png">
+            <p>some text goes here some text goes here some text goes here some text goes here</p>
+        The .css file:
+            img {
+                float: left;
+                margin-right: 10px;
+            }
+Click to run
+- The supported values are left and right.
+- You can float any other element with the same technique.
+
+../////// QUIZ: Fill in the blanks to make the class="box" element float on the right side.  ....////////////////////////////////////
+    ANSWER:
+    .box {
+        width: 50px;
+        height: 50px;
+        float:right;
+        }
+
+../////// Positioning ....////////////////////////////////////
+- To fine-tune the position of elements on the page, the position property can be used.
+- There are a number of different values the position property supports, changing the way the element is positioned.
+= NOTE: By default, all elements have the position:static, which is the normal flow.
+
+../////// By default, the elements in a normal flow are positioned as: ....////////////////////////////////////
+floating
+dynamic
+static====
+
+../////// Relative Position ....////////////////////////////////////
+- With position: relative; the element is positioned relative to its normal position. 
+- The properties top, right, bottom, and left can be used to specify how the element will be shifted.
+- For example:
+CODE PLAYGROUND: CSS
+.special {
+  position: relative;
+  bottom: 30px;
+  background-color: orange;
+} 
+
+The exact code:............................... 
+    The .html file: 
+        <section>
+            <article>First section</article>
+            <article class="special">Second section</article>
+            <article>Third section</article>
+        </section>
+    The .css file: 
+        article {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+        }
+        .special {
+            position: relative;
+            bottom:30px;
+            background-color: orange;
+        }
+Click to run
+- This will shift the element 30px from the bottom.
+= NOTE: The content of relatively positioned elements can be moved and overlap other elements, 
+    but the reserved space for the element is still preserved in the normal flow.
+
+../////// Fill in the blanks to shift the element 10px to the right from its position. ....////////////////////////////////////
+ANSWER: 
+    .box {
+    position:relative;
+    left: 10px; /*I will review this, I thought it's right not left....*/
+    }
+
+../////// Absolute Position  ....////////////////////////////////////
+- An absolutely positioned element is removed from the normal flow of the page. 
+- This is useful, for example, to create popup boxes, control menus, panels, etc.
+.special {
+    position: absolute;
+    top:30px;
+    left: 20px;
+    background-color: orange;
+  } 
+
+=- For example:
+    CODE: 
+        The .html file: 
+            <section>
+                <article>First section</article>
+                <article class="special">Second section</article>
+                <article>Third section</article>
+            </section>
+        The .css file:
+            article {
+                background-color: blue;
+                color: white;
+                padding: 20px;
+                margin: 10px;
+            }
+            .special {
+                position: absolute;
+                top:30px;
+                left: 20px;
+                background-color: orange;
+            }
+
+
+Click to run
+This will make the element position 30px from the top of the page and 20px from the left.
+
+The element's position is relative to the first positioned parent element: for example, you could absolutely position an element inside a relatively positioned container.
+
+Task: Modify the code to position the element at the bottom right corner.
+
+../////// Fill in the blanks to position an element 50% left-shifted on the page, and 20px shifted from the top. ....////////////////////////////////////
+    ANSWER:
+        .box {
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        }
+
+../////// Fixed Position ...////////////////////////////////////
+- Fixed positioning makes the element stick to a part of the visible area, 
+which means it always stays in the same place even if the page is scrolled.
+- For example:
+CODE PLAYGROUND: CSS
+.special {
+  position: fixed;
+  bottom: 30px;
+  background-color: orange;
+} 
+
+
+== The exact code:...
+    The .html file: 
+        <section>
+            <article>First section</article>
+            <article class="special">Second section</article>
+            <article>Third section</article>
+        </section>
+    The .css file: 
+        article {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+        }
+        .special {
+            position: fixed;
+            bottom:30px;
+            background-color: orange;
+        }
+Click to run
+- This makes the element stick to the bottom of the page, shifted by 30px.
+- Task: Modify the code to make the element span the entire width of the page and stick at the top.
+
+../////// Which of the following is NOT a value of the position property? ....////////////////////////////////////
+    relative
+    fixed
+    dynamic=====
+    absolute
+
+../////// z-index  ....////////////////////////////////////
+z-index 
+- When elements are positioned outside the normal flow, they can overlap other elements.
+- The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+- For example: 
+CODE PLAYGROUND: CSS
+    article {
+    position: relative;
+    z-index: 2;
+    }
+    .special {
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    }
+    
+    
+ ==......THE REAL CODE: 
+            The .html file: 
+                <section>
+                <article>First section</article>
+                <article class="special">Second section</article>
+                <article>Third section</article>
+                </section>
+            The .css file: 
+                article {
+                    position: relative;
+                    background-color: blue;
+                    color: white;
+                    padding: 20px;
+                    margin: 10px;
+                    z-index: 2;
+                }
+                .special {
+                    z-index: 1;
+                    position: absolute;
+                    top:30px;
+                    left:50%;
+                    background-color: orange;
+                }
+Click to run
+- By default, the orange box would be above the article elements, however we made it go under them using a lower z-index value.
+- Task: Provide a class name for the third article and make it go under the orange box.
+
+../////// To make a positioned element go above another element, it needs to have a:  ....////////////////////////////////////
+    lower z-index value
+    no z-index value
+    higher z-index value=====
+
+..///////  Practice....////////////////////////////////////
+    Practice 
+    Practice with the Code Repo project below:
+
+    Fixed Header
+    Make your header stick to the top of the page.
+    XP
+    +5
+    Practice
+    ..///////  ....////////////////////////////////////
+
+
+..///////  START OF PRACTICE....////////////////////////////////////
+            Fixed Header 
+            Great job!
+
+            In this part we will make our header stick to the top of the page.
+
+            Task
+            1. Change the position of the header element to be fixed, stick it to the top and left of the page and set a width of 100%.
+
+            2. To make the other sections appear below it, give the body a bottom margin of 100px.
+
+            3. Another styling tweak we need to do is float the profile image in the summary text to the right. You can also change the image to your avatar.
+
+            Example:
+
+            body {
+            font-family: Arial;
+            margin-top: 100px;
+            }
+            header {
+            text-align: center;
+            background-color: #eeeeee;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            position: fixed;
+            top: 0;
+            left 0;
+            width: 100%;
+            } 
+            .summary img {
+            float: right;
+            }
+            CSS
+            img-component
+            Now, when the page is scrolled, the header stays at the top, while the other sections go beneath it.
+..///////  END OF PRACTICE....////////////////////////////////////
+
+../////// An absolutely positioned element's position is relative to its? ....////////////////////////////////////
+An absolutely positioned element's position is relative to its 🔰first positioned parent element🔰. 
+If the element doesn't have any positioned parent elements, then its position will be relative to the initial 
+containing block, which is usually the viewport or the body element. The position of the first positioned parent 
+element is determined by the closest ancestor element that has a position value of relative, absolute, fixed, or 
+sticky.
+
+..///////  ....////////////////////////////////////
