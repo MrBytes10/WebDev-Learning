@@ -1,0 +1,223 @@
+
+..//////// Layout ....//////////////////////////////////////
+- As we now know, there are block and inline elements.
+- The block elements span the entire width of their parent and start from a new line, 
+while the inline elements are placed inside block elements and act similar to their content, 
+sitting on the same line. 
+- For example, let's create paragraphs of text and make some words in them bold:
+CODE:
+    <p>Learning <b>CSS</b> is fun!</p>
+    <p>some text </p>
+    <p>another <b>text</b></p> 
+Click to run:
+    <p> is a block element, while <b> is inline.
+
+..//////// QUIZ:-True or False: Inline elements can contain block elements. ....///////////////////////
+    True
+    False====
+
+..//////// Let's add background colors and borders to the <p> and <b> elements to see how they are laid out on the page: ....//////////////////////////////////////
+    Layout 
+    CODE: 
+        The .html file: 
+            <p>Learning <b>CSS</b> is fun!</p>
+            <p>some text </p>
+            <p>another <b>text</b></p>
+        The .css file:
+            p {
+                background-color: red;
+                border: 1px solid blue;
+                padding: 5px;
+            }
+            b {
+                background-color: yellow;
+                border: 1px dashed black;
+            }
+Click to run
+- Run the code to see the result.
+
+..//////// QUIZ: <a> is: ....//////////////////////////////////////
+inline-level=====
+block-level
+
+..//// The display property , i.e"display: block;" can be used to change how elements behave, making them behave as block or inline elements. ....//////////////////////////////////////
+Layout 
+- For example, let's make the inline <b> elements behave as block elements:
+    CODE:
+        b {
+        background-color: yellow;
+        border: 1px dashed black;
+        display: block;
+        } 
+Click to run
+Task: Make the paragraphs act as inline elements and check out the result!
+ANSWER: 
+    The .html file: 
+        <p>Learning <b>CSS</b> is fun!</p>
+        <p>some text </p>
+        <p>another <b>text</b></p>
+    The .css file: 
+        p {
+            background-color: red;
+            border: 1px solid blue;
+            padding: 5px;
+            display: inline;
+        }
+        b {
+            background-color: yellow;
+            border: 1px dashed black;
+            display: block;
+        }
+- NOTE: Recall, in a previous example we used the display property to change the list items behavior and make them inline.
+
+..//////// Fill in the blanks to change the list items to act as inline elements.  ....//////////////////////////////////////
+ANSWER:
+    li {  
+    display: inline;
+    }
+
+..//////// Another value of display is flex. ....//////////////////////////////////////
+- It is used to arrange elements in rows and columns.
+- Consider three article elements on the page, wrapped inside a section:
+    CODE: 
+        The .html file: 
+            <section>
+                <article>First section</article>
+                <article>Second section</article>
+                <article>Third section</article>
+            </section>
+        The .css file:
+            article {
+                background-color: blue;
+                color: white;
+                padding: 20px;
+                margin: 10px;
+            }
+Click to run
+- They are block elements and will appear on separate lines, each of them taking the whole width of the section.
+- NOTE: We have also added some colors and styles to the CSS, so we can distinguish the article elements.
+
+..//////// By default, block-level elements are arranged: ....//////////////////////////////////////
+    one under another =====
+    on top of each other
+    next to each other
+
+..//////// Now, if we add display:flex; to the section, 
+it will make the articles inside it act as flex items and arrange in columns: ....//////////////////////////////////////
+    CODE:
+        The .html file: 
+            <section>
+                <article>First section</article>
+                <article>Second section</article>
+                <article>Third section</article>
+            </section>
+        The .css file: 
+            article {
+                background-color: blue;
+                color: white;
+                padding: 20px;
+                margin: 10px;
+                width: 100%;
+            }
+            section {
+                display: flex;
+            }
+Click to run
+- The flex items take equal widths, to fill up the width of their container.
+- Task: Remove one of the articles and see how the layout is changed.
+
+..//////// To enable flex items, we need to add the display:flex; style on: ....//////////////////////////////////////
+the items
+everything on the page
+the parent of the items====
+the content
+
+..//////// By default, the flex items take equal space. ....//////////////////////////////////////
+- We can control what proportion of space flex items take up compared to the other items using the flex property.
+- For example, let's give the first article the flex value of 2, while the other two will have the flex value of 1:
+    CODE: 
+        The .html file: 
+            <section>
+                <article class="special">First section</article>
+                <article>Second section</article>
+                <article>Third section</article>
+            </section>
+        The .css file:
+            article {
+                background-color: blue;
+                color: white;
+                padding: 20px;
+                margin: 10px;
+                flex: 1;
+            }
+            .special {
+                flex: 2;
+            }
+            section {
+                display: flex;
+            }
+Click to run
+Now, the first article will take 2 times as much space as the other ones.
+
+..//////// Fill in the blanks to make equal columns from the div elements, which are wrapped in a <main> element.  ....//////////////////////////////////////
+    ANSWER:
+        main {
+        display: flex;
+        } 
+        div {
+        flex: 1;
+        }
+
+..//// Let's create a real website layout. It will include a header and footer, spanning the whole width of the page,
+and two columns for the main content, one taking up 3 times as much space as the other. ....//////////////////////////////////////
+
+- Here is the HTML:
+    CODE: 
+        The .html file: 
+            <header>My Header</header>
+            <main>
+                <section class="content">Main Section</section>
+                <section class="side">Side Section</section>
+            </main>
+            <footer>My Footer</footer>
+        The .css file:
+            header {
+                background-color: #77adda;
+                text-align: center;
+                padding: 20px;
+            }
+
+            main {
+                display: flex;
+            }
+            .content {
+                background-color: #2ca152;
+                color: white;
+                padding: 20px;
+                height: 200px;
+                flex: 3;
+            }
+            .side {
+                background-color: #e6e6a5;
+                padding: 20px;
+                flex: 1;
+            }
+
+            footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+        
+- Click to run
+- The layout will also act responsive and maintain the structure for any browser width.
+- Task: Open the code and check out the CSS styles to understand how it works.
+
+..//////// QUIZ:-Rearrange the HTML to wrap the <p> element inside an <article>. The paragraph contains the text 'Hello'. ....//////////////////////////////////////
+    <article>
+    <p>Hello</p>
+    </article>
+
+
+..////////  ....//////////////////////////////////////
