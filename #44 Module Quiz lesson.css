@@ -1,0 +1,49 @@
+
+..//////////// Give the class="box" element 10px margins from all sides, and a 
+padding of 5px from the left and right sides. ..////////////////////////
+    CODE:..............
+        .box {
+        margin: 10px;
+        padding: 0px 5px 0px 5px;
+        }
+
+..//////////////. Arrange the list items on the same line. ..////////////////////////
+    ANSWER:
+        li {
+        display: inline;
+        } 
+
+../////////// Fill in the blanks to divide the page into 3 equal columns. ..////////////////////////
+    ANSWER:
+        <div class="container">
+        <div class="section">1</div>
+        <div class="section">2</div>
+        <div class="section">3</div>
+        </div>
+      .container {
+           display:flex;
+            }
+        .section{
+            flex: 1;
+            }
+
+..//////////////. Fill in the blanks to correctly style the bar. ..////////////////////////
+- You are making a bottom bar for your web page, which should always be positioned at
+ the bottom of the page, irrespective of the page height. 
+ - The bar should have 50px height and take the whole width of the page.
+==== Fill in the blanks to correctly style the bar. =========
+    .bar {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    }
+
+..//////////////. Fill in the blanks to select the 5th row in the table. ..////////////////////////
+ANSWER: 
+    tr:nth-child(5) {
+        color: blue;
+        }
+
+..//////////////.  ..////////////////////////

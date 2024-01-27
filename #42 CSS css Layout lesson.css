@@ -133,8 +133,10 @@ the parent of the items====
 the content
 
 ..//////// By default, the flex items take equal space. ....//////////////////////////////////////
-- We can control what proportion of space flex items take up compared to the other items using the flex property.
-- For example, let's give the first article the flex value of 2, while the other two will have the flex value of 1:
+- We can control what proportion of space flex items take up compared to 
+the other items using the flex property.
+- For example, let's give the first article the flex value of 2, while the 
+other two will have the flex value of 1:
     CODE: 
         The .html file: 
             <section>
