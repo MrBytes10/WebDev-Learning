@@ -1,0 +1,255 @@
+
+..////////////////// CSS Transforms ...//////////////////////
+ 
+
+CSS transforms allow you to translate, rotate, scale, and skew elements.
+
+A transformation is an effect that lets an element change shape, size, and position.
+
+Let's take a look at the rotate transformation.
+
+Here is a div element: 
+    CODE: 
+        The .html file: 
+            <div></div>
+        The .css file:
+            div {
+            width: 200px;
+            height: 100px;
+            margin-top: 30px;
+            background-color: #32CD32;
+            }
+    Click to run
+    Now let's rotate the div by 10degrees:
+        CODE: 
+            The .html file: 
+                <div></div>
+            The .css file:
+                div {
+                width: 200px;
+                height: 100px;
+                margin-top: 30px;
+                background-color: #32CD32;
+                transform: rotate(10deg);
+                }
+    Click to run
+Run the code to see the result.
+
+..//////////////.QUIZ: What value does the rotate function take? ...//////////////////////
+    angle =====
+    direction
+    coordinates
+
+..//////////////////. The Rotate function ...//////////////////////
+- The rotate() method rotates an element clockwise or counter-clockwise, according to a given degree. 
+ Negative value will result in a counterclockwise rotation. 
+   For instance:
+            div.positive {
+                ...
+                transform: rotate(10deg);
+            }
+            div.negative {
+                ...
+                transform: rotate(-10deg);
+            } 
+
+    CODE: 
+        The .html file: 
+            <div class="positive"></div>
+            <br />
+            <div class="negative"></div>
+        The .css file:
+            div.positive {
+                width: 200px;
+                height: 100px;
+                margin-top: 30px;
+                background-color: #32CD32;
+                transform: rotate(10deg);
+            }
+            div.negative {
+                width: 200px;
+                height: 100px;
+                margin-top: 30px;
+                background-color: #32CD32;
+                transform: rotate(-10deg);
+            }
+        Click to run
+    Run the code and see how it works!
+
+
+..//////////////. Add the transformation property to rotate the element 45 degrees, counter-clockwise. ...//////////////////////
+    transform: rotate(-45deg);
+
+
+..//////////////////. transform-origin ...//////////////////////
+- The transform-origin property allows you to change the position of transformed elements. 
+For example:
+div.empty-div {
+   position: relative;
+   ...
+}
+div.green-div {
+   position: absolute;
+   ...
+   transform: rotate(15deg);
+   transform-origin: 25% 75%;
+}
+
+THE REAL CODE::
+    The .html file: 
+        <div class="empty-div">
+            <div class="green-div"></div>
+        </div>
+    The .css file: 
+        div.empty-div {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            margin: 30px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        div.green-div {
+            padding: 50px;
+            position: absolute;
+            background-color: #8bc34a;
+            border: 1px solid white;
+            transform: rotate(15deg);
+            transform-origin: 25% 75%;
+        }
+    Click to run
+-In the example above, we use the transform-origin property together with transform-rotate. 
+The origin of the x-axis (horizontal) is set to 25% from the left. 
+The origin for the y-axis (vertical) is set to 75% from above.
+
+Run the code to see the result.
+
+The default value for the property is 50% 50%, which corresponds to the center of the element.
+
+The transform-origin property must be used together with the transform property.
+
+
+..//////////////////. Which choice is the default value for the transform-origin property? ...//////////////////////
+    left
+    right top
+    center======
+    right
+
+
+..//////////////////. translate() method ...//////////////////////
+- The translate() method moves an element from its current position (according to the parameters given for the x-axis and the y-axis). 
+- In this example below, the div element is moved 100px to the right and 50px down:
+         CODE: 
+         The .html file: 
+             <div>Don't worry if it doesn't work right. If everything did, you'd be out of a job.</div>
+         The .css file: 
+            div {
+            width: 200px;
+            background-color: palegoldenrod;
+            transform: translate(100px, 200px); 
+            } 
+            Click to run
+- Positive values will push an element down and to the right of its default position, 
+while negative values will pull an element up and to the left of its default position.
+- An element can also be moved by setting the margins or by positioning the element, 
+although translate is a better choice for animating elements.
+
+
+..////////////. Add a translate function that moves the element 50 pixels from the left and 100 pixels from the top.  ...//////////////////////
+    ANSWER:...
+        transform:translate (50px, 100px);
+
+
+
+..//////////////////. skew()  method...//////////////////////
+ - The skew() method skews an element along the x-axis and the y-axis by the given angles.
+- The following example skews the div element by 30 degrees along the X-axis: 
+    CODE: 
+        The .html file: 
+            <div></div>
+        The .css file: 
+            div {
+                margin-left:50px;
+                width: 200px;
+                padding: 50px;
+                background-color: #32CD32;
+                transform: skew(30deg);
+            }
+        Click to run
+- If the second parameter is not specified, it has a zero value.
+
+
+..//////////////////. Which value type is used in the skew function?  ...//////////////////////
+    X axis and Y axis
+    degrees=====
+    pixels
+
+
+..//////////////////. scale() method ...//////////////////////
+ - The scale() method increases or decreases the size of an element, according to the parameters given
+  for the width and height. 1 stands for the original size, 2 for twice the original size, and so on. 
+CODE PLAYGROUND: CSS
+    div.first {
+    ...
+    transform: scale(0.7, 0.7);
+    }
+    div.second {
+    ...
+    transform: scale(1.5, 1.5);
+    }
+....................................................................
+
+The EXACT CODE: 
+    The .html file: 
+        <div class="first"></div>
+        <br />
+        <div class="second"></div>
+    The .css file: 
+        div.first {
+            width: 200px;
+            height: 100px;
+            background-color: #8BC34A;
+            transform: scale(0.7, 0.7);
+            color:white;
+        }
+        div.second {
+            margin: 60px;
+            width: 200px;
+            height: 100px;
+            background-color: #8bc34a;
+            transform: scale(1.5,1.5););
+            color:white;
+        }
+        Click to run
+- In the example below, we decreased the first div by the factor 0.7 both horizontally and vertically, and increased the second div by a factor of 1.5.
+
+
+..//////////////////. Fill in the blank to reduce the element to 20% of its original size.  ...//////////////////////
+ANSWER:
+transform: scale(0.2);
+
+
+..//////////////////. Multiple Transforms  ...//////////////////////
+- Multiple transforms can be used at once. 
+- Applying multiple transforms to an element is simple; just separate them using spaces.
+- For example, let's rotate and translate at the same time:
+    CODE:
+    The .html file: 
+        <div></div>
+    The .css file: 
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: #8BC34A;
+            transform: rotate(45deg) translate(100px);
+        }
+    Click to run
+- You can use as many transforms as you want.
+
+
+..//////////////////. When adding multiple transformations in a single transform property, separate them with ...  ...//////////////////////
+    spaces====
+    semicolons
+    commas
+
+..//////////////////.  ...//////////////////////
