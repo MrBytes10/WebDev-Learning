@@ -1,0 +1,97 @@
+
+..///////////. CSS Animations ..//////////////////////////
+- CSS transitions are generally best for simple from-to movements, while CSS animations are for more complex series of movements.
+- With animations, you can change as many CSS properties as you want to, as many times you want to.
+- An animation is defined using keyframes which hold the styles the element will have at certain times.
+
+..///////////. CSS animations are defined using: ..//////////////////////////
+    transforms
+    keyframes=======
+    links
+
+..///////////. Keyframes ..//////////////////////////
+- Keyframes are defined using the @keyframes keyword, followed by a name of the animation.
+    - For example:
+            @keyframes colorchange {
+            [b]0%[/b]  {background-color: red;}
+            [b]50%[/b]  {background-color: yellow;}
+            [b]70%[/b]  {background-color: blue;}
+            [b]100%[/b] {background-color: green;}
+            }
+- The example animation will change the background color of an element three times: when the animation is 
+50% complete, 70% complete, and when the animation is 100% complete.
+*** colorchange is the name of the animation. You can choose any name for your animation.
+
+..////////. Drag & drop to define an animation called "demo", with the keyframes at 0% and 100%, setting the font-size. ..//////////////////////////
+ANSWER:-.................
+    @keyframes demo {
+        0% {font-size: 12px;}
+        100% {font-size: 18px;}
+        }
+
+..///////////.As an alternative to using percentages, you can use from and to keywords, where:  ..//////////////////////////
+Keyframes 
+- As an alternative to using percentages, you can use from and to keywords, where:
+   ** from is a starting offset of 0%
+   ** to is an ending offset of 100%.
+- The two examples below are equivalent, and produce the same result: 
+
+        @keyframes colorchange {
+        0% {background-color: red;}
+        100% {background-color: green;}
+        }
+        CSS
+        @keyframes colorchange {
+        from {background-color: red;}
+        to {background-color: green;}
+        }
+
+
+..///////////. Which alternative word can be used in place of 0%? ..//////////////////////////
+   ANSWER: 
+    from
+
+..///////////. To get an animation to work, you must bind the animation to an element.  ..//////////////////////////
+Keyframes 
+- To get an animation to work, you must bind the animation to an element.
+- In the example below, the animation is set for the div element and lasts three seconds:
+CODE PLAYGROUND: CSS
+div {
+...
+   animation-name: colorchange;
+   animation-duration: 3s;
+}
+@keyframes colorchange {
+   0% {background-color: red;}
+   50% {background-color: green;}
+   100% {background-color: blue;}
+}
+
+    THE EXACT CODE: 
+        The .html file: 
+            <div></div> 
+        The .css file: 
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: colorchange;
+                animation-duration: 3s;
+            }
+            @keyframes colorchange {
+                0% {background-color: red; }
+                50% {background-color: green; }
+                100% {background-color: blue; }
+            }
+        Click to run
+- Run the code to see it in action!
+- The animation-name property specifies the animation to be used for the element.
+- The animation-duration property specifies the duration of the selected animation.
+
+..///////////. Which property binds the keyframes with an element? ..//////////////////////////
+    @keyframes
+    transform
+    key-name
+    animation-name
+
+..///////////.  ..//////////////////////////
