@@ -1,0 +1,38 @@
+
+..////////// - Which of these is a valid CSS transformation statement? ..////////////////////////
+modify()
+skip()
+simulate()
+scale() ======
+
+../////// -How will an element with a statement transform: translate(0, 100px) behave? ..////////////////////////
+Resized to 100 pixels
+Pushed to the left 100 pixels
+Pushed to the right 100 pixels
+Pushed down 100 pixels =======
+
+
+../////// -Fill in the blanks to rotate the object with the id "ball" 45 degrees counter-clockwise. ..////////////////////////
+#ball{
+transform:(-45deg);
+}
+
+
+../////// -Fill in the blanks to create a valid animation called "blink" and bind it to the element with the id "circle". ..////////////////////////
+#circle{
+    animation-name:blink;
+    }
+    @keyframes blink {
+    from {background-color: white;}
+    to {background-color: black;}
+    }
+
+../////// -What is the delay of the following animation declaration? ..////////////////////////
+animation: demo 2s ease-in 1s infinite reverse;
+    Choice:
+        2s
+        1s =======
+        reverse
+        infinite
+
+../////// - ..////////////////////////
