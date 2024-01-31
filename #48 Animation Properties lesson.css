@@ -1,0 +1,212 @@
+
+..////////////.. Animations ...//////////////////////////
+- There are a number of properties we can set for the animation.
+- The animation-timing-function specifies the speed curve of an animation. It can have the following values:
+    ease - specifies an animation with a slow start, then fast, then end slowly (this is default)
+    linear - specifies an animation with the same speed from start to end
+    ease-in - specifies an animation with a slow start
+    ease-out - specifies an animation with a slow end
+    ease-in-out - specifies an animation with a slow start and end.
+
+- For example:
+CODE PLAYGROUND: CSS
+animation-timing-function: ease-in;
+Click to run
+
+= THE EXACT CODE: 
+    The .html file: 
+        <div></div>
+    The .css file: 
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: colorchange;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+        }
+        @keyframes colorchange {
+            0% {background-color: red; }
+            50% {background-color: green; }
+            100% {background-color: blue; }
+        }
+
+
+..////////////.. QUIZ: Fill in the blanks to set the animation name to "test" and use the "ease-out" animation function.  ...//////////////////////////
+#box {
+animation-name: test;
+animation-timing-function: ease-out;
+}
+
+
+..////////////.. animation-delay:   ...//////////////////////////
+Animations 
+- animation-delay - defines the delay before an animation starts. 
+- For example:
+CODE PLAYGROUND: CSS
+    animation-delay: 2s;
+Click to run
+
+    THE EXACT CODE: 
+        The .html file: 
+            <div></div>
+        The .css file: 
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: colorchange;
+                animation-duration: 3s;
+                animation-timing-function: ease-in;
+                animation-delay: 2s;
+            }
+            @keyframes colorchange {
+                0% {background-color: red; }
+                50% {background-color: green; }
+                100% {background-color: blue; }
+            }
+- The animation-delay and animation-duration values can be defined in seconds (s) or milliseconds (ms).
+
+
+..////////////.. QUIZ:True or False: animation-delay: 2s; is the same as animation-delay: 2000ms;  ...//////////////////////////
+False
+True====
+
+
+..////////.. The animation-iteration-count  ...//////////////////////////
+Animations 
+- The animation-iteration-count property determines the number of times an animation repeats. 
+
+- For example:
+CODE PLAYGROUND: CSS
+    animation-iteration-count: 5;
+Click to run
+
+THE EXACT CODE: ............................................
+    The .html file: 
+        <div></div>
+    The .css file: 
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: colorchange;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 5;
+        }
+        @keyframes colorchange {
+            0% {background-color: red; }
+            50% {background-color: green; }
+            100% {background-color: blue; }
+        }
+- To make the animation repeat forever, just use the infinite value:
+CODE PLAYGROUND: CSS
+    animation-iteration-count: infinite;
+Click to run
+
+
+..////////////.. QUIZ:Which value of the animation-iteration-count property makes the animation run forever?...//////////////////////////
+loop
+0
+top
+infinite =======
+
+
+..////////////..The animation-direction ...//////////////////////////
+Animations 
+- The animation-direction indicates how the keyframe should be applied.
+
+- The values can be set as:
+    normal - the default value, which means it plays forward from 0 % to 100%. 
+    reverse - plays the keyframe in an opposite direction from 100 % to 0%
+    alternate -  the animation first runs forward, then backward, then forward.
+    alternate-reverse - the animation first runs backward, then forward, then backward.
+
+For example:
+CODE PLAYGROUND: CSS
+animation-direction: reverse; 
+Click to run 
+   -- THE EXACT CODE: ............................................
+        The .html file: 
+            <div></div>
+        The .css file: 
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: colorchange;
+                animation-duration: 3s;
+                animation-timing-function: ease-in;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: reverse;
+            }
+            @keyframes colorchange {
+                0% {background-color: red; }
+                50% {background-color: green; }
+                100% {background-color: blue; }
+            }
+
+..////////////.. QUIZ:Which of the following is the default value of the animation-direction property? ...//////////////////////////
+forward
+reverse
+0
+normal ==== 
+
+..////////////.. An example ...//////////////////////////
+Animations 
+Consider the following example: 
+
+CODE PLAYGROUND: CSS
+div {
+   animation-name: colorchange;
+   animation-duration: 3s;
+   animation-timing-function: ease-in;
+   animation-delay: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: reverse;
+}
+Click to run
+    The EXACT CODE: ..........................................
+        The .html file: 
+            <div></div>
+        The .css file: 
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: colorchange;
+                animation-duration: 3s;
+                animation-timing-function: ease-in;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: reverse;
+            }
+            @keyframes colorchange {
+                0% {background-color: red; }
+                50% {background-color: green; }
+                100% {background-color: blue; }
+            }
+.......................................................................................................
+- A single animation property can be used to achieve the same result as the above code:
+CODE PLAYGROUND: CSS
+div { 
+   animation: colorchange 3s ease-in 1s infinite reverse;
+}
+Click to run
+The order in which each property is declared in the shorthand declaration is important and cannot be altered, or the animation will not work properly.
+
+
+..//////.. QUIZ:Add an animation named sizechange, which starts after 2 seconds, runs for 5 seconds, 
+uses the ease function, and loops forever....//////////////////////////
+ANSWER:
+    .test {
+        animation-name: sizechange;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-delay: 2s;
+        animation-iteration-count:infinite;
+        }  
+
+..////////////..  ...//////////////////////////
