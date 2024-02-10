@@ -1,0 +1,27 @@
+/*
+Here is JavaScript code for a coffee vending machine program using a switch statement based on my lesson takeaways:
+*/
+    // Coffee types 
+    const ESPRESSO = 1; 
+    const LATTE = 2;
+    const AMERICANO = 3;
+
+    // Get coffee type selection
+    let selectedCoffee = LATTE;
+
+    // Make coffee
+    switch(selectedCoffee) {
+      case ESPRESSO: 
+        console.log("Making espresso... ☕");
+        break;
+      case LATTE:
+        console.log("Making latte... 🥛☕"); 
+        break;
+      case AMERICANO:
+        console.log("Making americano... ☕");
+        break;
+      default:
+        console.log("Invalid selection. Please try again.");
+    }
+
+    // Output: Making latte... 🥛☕

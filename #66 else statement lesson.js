@@ -123,10 +123,9 @@ else if statement
 
 ..]]]]]]]]]]]]]]]]..PRACTICE ANSWER ..]]]]]]]]]]]]]]]
         - Here is code to create an "Organized Robot" program that categorizes items by color:
-        // List of colors
+        // How to create the list of colors
         const colors = ['red', 'green', 'blue', 'yellow', 'white', 'black'];
-
-        // Inventory bins for each color
+        // making Inventory bins for each color
         const bins = {
         red: [],
         green: [], 
@@ -136,7 +135,7 @@ else if statement
         black: []   
         };
 
-        // Function to categorize an item  
+        // writing the code Function to categorize an item  
         function categorizeItem(item, color) {
         // Check if valid color
         if(colors.includes(color)) {
@@ -147,17 +146,14 @@ else if statement
             console.log("Invalid color");
         }
         }
-
         // Example items
         const ball = "Ball";
         const book = "Book";
         const shirt = "Shirt";
-
         // Categorize 
         categorizeItem(ball, "red"); 
         categorizeItem(book, "blue");
         categorizeItem(shirt, "green");
-
         // Print inventory
         for(let color in bins) {
         console.log(color + ": " + bins[color]);  
