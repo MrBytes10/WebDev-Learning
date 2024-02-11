@@ -101,7 +101,7 @@ The for loop
         }
 Click to run, and the result is that the bullets keep diminishing one by one upto zero: 
 EXPLANATION: 
-what is the output of this code:
+- What is the output of this code:
         for(let i=5; i>=0; i-=1) { 
             console.log(`Bullets: ${i}`); 
         }
